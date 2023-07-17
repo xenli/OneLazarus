@@ -76,6 +76,6 @@ QQ群：814696487（原来的群被封了，请加新群）
 	2.增加线程变量  
 	3.优化一些细节 UniDemoController  
 
-### lazarus 中间件 
+### OneLazarus中间件 lazarus fpc pascal
 ### 叫兽的另一款[OneDelphi中间件](https://github.com/xenli/OneDelphi "OneDelphi中间件")
 ### 群友维护的基于[Cross-Socket OneDelphi中间件](https://gitee.com/cityboat/OnePascal "Cross-Socket OneDelphi中间件")
