@@ -1,5 +1,7 @@
 # OneLazarus简介
-## OneLazarus是基于lazarus+fpc-pascal（开发pascal另一神器，和Delphi不同的是它们是开源免费的）开发的一个收费高效的(OneServer)中间件，包括针对lazarus端开发的(OneClient)控件包。支持win平台,liunx平台,ios平台等一些主流平台。其出色的MVC架构以及传统DataSet双架构,让人眼前一亮。。。飞一般的感觉， 你还在等什么呢？无任何隐藏代码，全源码，无任何后门,叫兽出品必属精品。
+OneLazarus是基于lazarus+fpc-pascal（开发pascal另一神器，和Delphi不同的是它们是开源免费的）开发的一个收费高效的(OneServer)中间件，包括针对lazarus端开发的(OneClient)控件包。  
+ 支持win平台,liunx平台,ios平台等一些主流平台。其出色的MVC架构以及传统DataSet双架构,让人眼前一亮。。。飞一般的感觉， 你还在等什么呢？   
+ 无任何隐藏代码，全源码，无任何后门,叫兽出品必属精品。   
 
 [![Security Status](https://www.murphysec.com/platform3/v31/badge/1676410356589420544.svg)](https://www.murphysec.com/console/report/1676410356530700288/1676410356589420544)
 
