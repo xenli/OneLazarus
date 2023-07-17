@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="OneServerConsole.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <TopLine Value="34"/>
+        <CursorPos X="38" Y="46"/>
+        <UsageCount Value="29"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\onecontrollerresult.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneControllerResult"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="34"/>
+        <UsageCount Value="29"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\onehttpcontrollerrtti.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\onehttpctxtresult.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\onehttproutermanage.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\onehttpserver.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneHttpServer"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="373"/>
+        <CursorPos X="15" Y="228"/>
+        <UsageCount Value="29"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\onehttpconst.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneHttpConst"/>
+        <EditorIndex Value="8"/>
+        <UsageCount Value="29"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\onehttpcontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\demo\democontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\demo\demodatacontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\demo\demojsoncontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\demo\demoztcontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\demo\democustresult.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\virtualFile\onevirtualfile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\attribute\oneattribute.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\crypto\onecrypto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\crypto\onesqlcrypto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\crypto\onestreamstring.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\func\onedatetimehelper.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\func\onefilehelper.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\func\oneguid.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\func\onemonitor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\func\onestopwatch.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\logger\oneilog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\logger\onelog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\multipart\onemultipart.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\rtti\onerttihelper.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\serialization\onedatajson.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\serialization\oneserialization.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\thread\onethread.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\token\onetokenmanage.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="dbCenter\onedatainfo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="dbCenter\oneorm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="dbCenter\oneormrtti.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneZTManage"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="50" Y="18"/>
+        <UsageCount Value="29"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\controller\datacontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\controller\tokencontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\controller\unidemocontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\controller\virtualfilecontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="oneglobal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneGlobal"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="325"/>
+        <CursorPos X="11" Y="352"/>
+        <UsageCount Value="29"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Lazarus\fpcsrc\packages\fcl-base\src\custapp.pp"/>
+        <UnitName Value="CustApp"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="337"/>
+        <CursorPos X="23" Y="347"/>
+        <UsageCount Value="14"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="19"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit>
+      <Unit>
+        <Filename Value="neonSerialization\neon.core.attributes.pas"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="19"/>
+      </Unit>
+      <Unit>
+        <Filename Value="neonSerialization\neon.core.dynamictypes.pas"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="19"/>
+      </Unit>
+      <Unit>
+        <Filename Value="neonSerialization\neon.core.nullables.pas"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="19"/>
+      </Unit>
+      <Unit>
+        <Filename Value="neonSerialization\neon.core.persistence.pas"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="19"/>
+      </Unit>
+      <Unit>
+        <Filename Value="neonSerialization\neon.core.serializers.rtl.pas"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="19"/>
+      </Unit>
+      <Unit>
+        <Filename Value="neonSerialization\neon.core.serializers.vcl.pas"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="19"/>
+      </Unit>
+      <Unit>
+        <Filename Value="neonSerialization\neon.core.typeinfo.pas"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="19"/>
+      </Unit>
+      <Unit>
+        <Filename Value="neonSerialization\neon.core.types.pas"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="19"/>
+      </Unit>
+      <Unit>
+        <Filename Value="neonSerialization\neon.core.utils.pas"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="19"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Lazarus\lazarus\components\Mormot2\src\net\mormot.net.server.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="1912"/>
+        <CursorPos X="19" Y="1925"/>
+        <UsageCount Value="14"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Lazarus\fpcsrc\packages\rtl-generics\src\generics.collections.pas"/>
+        <UnitName Value="Generics.Collections"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="1362"/>
+        <CursorPos Y="1383"/>
+        <UsageCount Value="14"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\OneClient\oneclientconnect.pas"/>
+        <UnitName Value="OneClientConnect"/>
+        <EditorIndex Value="4"/>
+        <CursorPos X="72" Y="11"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Lazarus\fpcsrc\packages\openssl\src\openssl.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="417" TopLine="398"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="418" TopLine="398"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="419" TopLine="404"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="420" TopLine="404"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="421" TopLine="404"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="423" TopLine="404"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="424" TopLine="404"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="425" TopLine="404"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="426" TopLine="404"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="427" TopLine="404"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="428" TopLine="404"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="429" Column="19" TopLine="404"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="462" TopLine="445"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="463" TopLine="445"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="415" TopLine="396"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="476" TopLine="459"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="648" TopLine="630"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="1079" TopLine="1061"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="1080" TopLine="1061"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="1081" TopLine="1061"/>
+      </Position>
+      <Position>
+        <Filename Value="OneServerConsole.lpr"/>
+        <Caret Line="11" Column="20"/>
+      </Position>
+      <Position>
+        <Filename Value="oneglobal.pas"/>
+        <Caret Line="330" Column="40" TopLine="296"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="417" TopLine="399"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="430" TopLine="400"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="417" TopLine="400"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="430" TopLine="400"/>
+      </Position>
+      <Position>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <Caret Line="18" Column="50"/>
+      </Position>
+      <Position>
+        <Filename Value="oneglobal.pas"/>
+        <Caret Line="310" TopLine="306"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\..\Lazarus\fpcsrc\packages\fcl-base\src\custapp.pp"/>
+        <Caret Line="65" Column="18" TopLine="48"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientconnect.pas"/>
+        <Caret Line="11" Column="72"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

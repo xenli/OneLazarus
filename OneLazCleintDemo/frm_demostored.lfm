@@ -1,0 +1,371 @@
+object frmDemoStored: TfrmDemoStored
+  Left = 419
+  Height = 454
+  Top = 228
+  Width = 745
+  Caption = 'frmDemoStored'
+  ClientHeight = 454
+  ClientWidth = 745
+  LCLVersion = '2.2.4.0'
+  object GroupBox1: TGroupBox
+    Left = 0
+    Height = 88
+    Top = 0
+    Width = 745
+    Align = alTop
+    Caption = '连接设置'
+    ClientHeight = 66
+    ClientWidth = 741
+    TabOrder = 0
+    object edServerHost: TEdit
+      Left = 96
+      Height = 25
+      Top = 3
+      Width = 184
+      TabOrder = 0
+      Text = '127.0.0.1'
+    end
+    object Label1: TLabel
+      Left = 16
+      Height = 17
+      Top = 8
+      Width = 60
+      Caption = '服务端地址'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 296
+      Height = 17
+      Top = 37
+      Width = 48
+      Caption = '连接密钥'
+      ParentColor = False
+    end
+    object edServerKey: TEdit
+      Left = 376
+      Height = 25
+      Top = 32
+      Width = 184
+      TabOrder = 1
+    end
+    object Label3: TLabel
+      Left = 16
+      Height = 17
+      Top = 37
+      Width = 48
+      Caption = '连接账套'
+      ParentColor = False
+    end
+    object edServerZTCode: TEdit
+      Left = 96
+      Height = 25
+      Top = 32
+      Width = 184
+      TabOrder = 2
+    end
+    object tbConnect: TButton
+      Left = 584
+      Height = 25
+      Top = 3
+      Width = 123
+      Caption = '连接'
+      OnClick = tbConnectClick
+      TabOrder = 3
+    end
+    object tbConnectClose: TButton
+      Left = 584
+      Height = 25
+      Top = 32
+      Width = 123
+      Caption = '断开连接'
+      OnClick = tbConnectCloseClick
+      TabOrder = 4
+    end
+    object Label4: TLabel
+      Left = 296
+      Height = 17
+      Top = 5
+      Width = 48
+      Caption = '服务端口'
+      ParentColor = False
+    end
+    object edServerPort: TEdit
+      Left = 376
+      Height = 25
+      Top = 0
+      Width = 184
+      NumbersOnly = True
+      TabOrder = 5
+      Text = '9090'
+    end
+  end
+  object Label5: TLabel
+    Left = 8
+    Height = 17
+    Top = 96
+    Width = 231
+    Caption = '存储过程语句,赋值语句会自动生成相关参数'
+    ParentColor = False
+  end
+  object edSQL: TMemo
+    Left = 8
+    Height = 120
+    Top = 120
+    Width = 288
+    TabOrder = 1
+  end
+  object Label6: TLabel
+    Left = 8
+    Height = 17
+    Top = 261
+    Width = 72
+    Caption = '存储过程名称'
+    ParentColor = False
+  end
+  object edStoredName: TEdit
+    Left = 88
+    Height = 25
+    Top = 256
+    Width = 184
+    TabOrder = 2
+  end
+  object edIsData: TCheckBox
+    Left = 304
+    Height = 21
+    Top = 257
+    Width = 70
+    Caption = '返回数据'
+    TabOrder = 3
+  end
+  object tbDoStored: TButton
+    Left = 424
+    Height = 25
+    Top = 256
+    Width = 136
+    Caption = '执行存储过程'
+    Color = clBlack
+    OnClick = tbDoStoredClick
+    TabOrder = 4
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Height = 152
+    Top = 288
+    Width = 704
+    Color = clWindow
+    Columns = <>
+    DataSource = dsData
+    TabOrder = 5
+  end
+  object Label7: TLabel
+    Left = 344
+    Height = 17
+    Top = 96
+    Width = 48
+    Caption = '参数设置'
+    ParentColor = False
+  end
+  object gridParams: TDBGrid
+    Left = 304
+    Height = 122
+    Top = 120
+    Width = 408
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = '参数名称'
+        Width = 100
+        FieldName = 'FParamName'
+      end    
+      item
+        Title.Caption = '参数值'
+        Width = 100
+        FieldName = 'FParamValue'
+      end    
+      item
+        PickList.Strings = (
+          'ptInput'
+          'ptOutput'
+          'ptInputOutput'
+          'ptResult'
+        )
+        Title.Caption = '入参出参'
+        Width = 100
+        FieldName = 'FParamType'
+      end    
+      item
+        PickList.Strings = (
+          'ftString'
+          'ftSmallint'
+          'ftInteger'
+          'ftWord'
+          'ftBoolean'
+          'ftFloat'
+          'ftCurrency'
+          'ftBCD'
+          'ftDate'
+          'ftTime'
+          'ftDateTime'
+          'ftBytes'
+          'ftVarBytes'
+          'ftAutoInc'
+          'ftBlob'
+          'ftMemo'
+          'ftGraphic'
+          'ftFmtMemo'
+          'ftParadoxOle'
+          'ftDBaseOle'
+          'ftTypedBinary'
+          'ftCursor'
+          'ftFixedChar'
+          'ftWideString'
+          'ftLargeint'
+          'ftADT'
+          'ftArray'
+          'ftReference'
+          'ftDataSet'
+          'ftOraBlob'
+          'ftOraClob'
+          'ftVariant'
+          'ftInterface'
+          'ftIDispatch'
+          'ftGuid'
+          'ftTimeStamp'
+          'ftFMTBcd'
+          'ftFixedWideChar'
+          'ftWideMemo'
+        )
+        Title.Caption = '参数数据类型'
+        Width = 100
+        FieldName = 'FParamDataType'
+      end    
+      item
+        Title.Caption = '长度'
+        Width = 100
+        FieldName = 'FParamSize'
+      end    
+      item
+        Title.Caption = '服务端返回值'
+        Width = 120
+        FieldName = 'FParamResultValue'
+      end>
+    DataSource = dsParams
+    TabOrder = 6
+  end
+  object tbGetParams: TButton
+    Left = 552
+    Height = 25
+    Top = 91
+    Width = 160
+    Caption = '跟据语句添加参数'
+    OnClick = tbGetParamsClick
+    TabOrder = 7
+  end
+  object OneConnection: TOneConnection
+    IsHttps = False
+    HTTPPort = 0
+    ConnectionTimeout = 0
+    ResponseTimeout = 0
+    Left = 256
+    Top = 64
+  end
+  object qryData: TOneDataSet
+    FieldDefs = <>
+    DataInfo.IsDesignGetFields = False
+    DataInfo.Connection = OneConnection
+    DataInfo.OpenMode = openData
+    DataInfo.SaveMode = saveData
+    DataInfo.DataReturnMode = dataStream
+    DataInfo.PageSize = -1
+    DataInfo.PageIndex = 0
+    DataInfo.PageCount = 0
+    DataInfo.PageTotal = 0
+    DataInfo.AffectedMaxCount = 0
+    DataInfo.AffectedMustCount = 1
+    DataInfo.RowsAffected = 0
+    DataInfo.AsynMode = False
+    DataInfo.IsReturnData = False
+    DataInfo.TranSpanSec = 0
+    Params = <>
+    MultiIndex = 0
+    UpdateMode = upWhereChanged
+    Left = 184
+    Top = 296
+  end
+  object qryParams: TBufDataset
+    FieldDefs = <>
+    Left = 464
+    Top = 56
+    object qryParamsFParamName: TWideStringField
+      FieldKind = fkData
+      FieldName = 'FParamName'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryParamsFParamValue: TWideStringField
+      FieldKind = fkData
+      FieldName = 'FParamValue'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryParamsFParamType: TWideStringField
+      FieldKind = fkData
+      FieldName = 'FParamType'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryParamsFParamDataType: TWideStringField
+      FieldKind = fkData
+      FieldName = 'FParamDataType'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryParamsFParamSize: TLongintField
+      FieldKind = fkData
+      FieldName = 'FParamSize'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryParamsFParamResultValue: TWideStringField
+      FieldKind = fkData
+      FieldName = 'FParamResultValue'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 250
+    end
+  end
+  object dsParams: TDataSource
+    DataSet = qryParams
+    OnDataChange = dsParamsDataChange
+    Left = 512
+    Top = 56
+  end
+  object dsData: TDataSource
+    DataSet = qryData
+    OnDataChange = dsParamsDataChange
+    Left = 240
+    Top = 296
+  end
+end

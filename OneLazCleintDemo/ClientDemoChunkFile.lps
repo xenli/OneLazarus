@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="ClientDemoChunkFile.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="35"/>
+      </Unit>
+      <Unit>
+        <Filename Value="frm_demochunkfile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmDemoChunkFile"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_DemoChunkFile"/>
+        <TopLine Value="155"/>
+        <CursorPos X="39" Y="175"/>
+        <UsageCount Value="35"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\delphi\project\OneDelphi\OneClient\ClientDemo\frmDemoUpDownChunk.pas"/>
+        <ComponentName Value="Form7"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="116"/>
+        <CursorPos X="13" Y="145"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="frm_demodata.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_DemoData"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="66"/>
+        <CursorPos X="83" Y="79"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\OneClient\oneclientconnect.pas"/>
+        <UnitName Value="OneClientConnect"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="2276"/>
+        <CursorPos X="38" Y="2296"/>
+        <FoldState Value=" T0iuf834 PCQ8?"/>
+        <UsageCount Value="18"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\OneClient\oneclientvirtualfile.pas"/>
+        <UnitName Value="OneClientVirtualFile"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="197"/>
+        <CursorPos X="33" Y="210"/>
+        <UsageCount Value="18"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\OneClient\oneclientconst.pas"/>
+        <UnitName Value="OneClientConst"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="47"/>
+        <CursorPos X="54" Y="44"/>
+        <UsageCount Value="18"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\Lazarus\fpc\3.2.2\source\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1948"/>
+        <CursorPos Y="1960"/>
+        <UsageCount Value="17"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\Lazarus\fpc\3.2.2\source\packages\fcl-web\src\base\fphttpclient.pp"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="37" Y="28"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\Lazarus\lcl\forms.pp"/>
+        <UnitName Value="Forms"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1491"/>
+        <CursorPos X="29" Y="1506"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\Lazarus\lcl\include\application.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2218"/>
+        <CursorPos X="3" Y="2222"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\OneClient\baselib\onethread.pas"/>
+        <UnitName Value="OneThread"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="13"/>
+        <CursorPos X="25" Y="37"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\Lazarus\fpc\3.2.2\source\rtl\objpas\sysutils\sysutilh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="23"/>
+        <CursorPos X="4" Y="39"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\Lazarus\fpc\3.2.2\source\rtl\objpas\classes\classes.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="663"/>
+        <CursorPos X="44" Y="669"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\OneClient\baselib\onefilehelper.pas"/>
+        <UnitName Value="OneFileHelper"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\Lazarus\lcl\comctrls.pp"/>
+        <UnitName Value="ComCtrls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1796"/>
+        <CursorPos X="22" Y="1822"/>
+        <UsageCount Value="16"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\Lazarus\fpc\3.2.2\source\rtl\objpas\objpas.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="19"/>
+        <CursorPos X="26" Y="35"/>
+        <UsageCount Value="16"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\OneClient\baselib\onestreamstring.pas"/>
+        <UnitName Value="OneStreamString"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="40"/>
+        <CursorPos X="25" Y="54"/>
+        <UsageCount Value="16"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\..\Lazarus\fpc\3.2.2\source\packages\rtl-generics\src\generics.collections.pas"/>
+        <UnitName Value="Generics.Collections"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="125"/>
+        <CursorPos X="52" Y="144"/>
+        <UsageCount Value="14"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\OneClient\baselib\oneserialization.pas"/>
+        <UnitName Value="OneSerialization"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="125"/>
+        <CursorPos X="22" Y="136"/>
+        <UsageCount Value="14"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="..\OneClient\oneclientconnect.pas"/>
+        <Caret Line="2605" TopLine="2589"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientconnect.pas"/>
+        <Caret Line="2607" TopLine="2589"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientconnect.pas"/>
+        <Caret Line="2608" TopLine="2589"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientvirtualfile.pas"/>
+        <Caret Line="325" Column="51" TopLine="306"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demochunkfile.pas"/>
+        <Caret Line="165" TopLine="150"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientvirtualfile.pas"/>
+        <Caret Line="229" TopLine="202"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientvirtualfile.pas"/>
+        <Caret Line="307" TopLine="291"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientconnect.pas"/>
+        <Caret Line="2620" TopLine="2590"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientconnect.pas"/>
+        <Caret Line="2607" TopLine="2590"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientconnect.pas"/>
+        <Caret Line="2608" TopLine="2590"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demochunkfile.pas"/>
+        <Caret Line="158" Column="21" TopLine="150"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demochunkfile.pas"/>
+        <Caret Line="192" Column="49" TopLine="162"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demochunkfile.pas"/>
+        <Caret Line="61" Column="40" TopLine="46"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientvirtualfile.pas"/>
+        <Caret Line="58" Column="23" TopLine="44"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientvirtualfile.pas"/>
+        <Caret Line="51" Column="35" TopLine="44"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientvirtualfile.pas"/>
+        <Caret Line="204" Column="43" TopLine="188"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientvirtualfile.pas"/>
+        <Caret Line="44" Column="32" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientvirtualfile.pas"/>
+        <Caret Line="231" Column="41" TopLine="220"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientvirtualfile.pas"/>
+        <Caret Line="44" Column="32" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientvirtualfile.pas"/>
+        <Caret Line="287" Column="35" TopLine="257"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientvirtualfile.pas"/>
+        <Caret Line="16" Column="39"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientvirtualfile.pas"/>
+        <Caret Line="225" Column="48" TopLine="202"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demochunkfile.pas"/>
+        <Caret Line="106" Column="39" TopLine="89"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demochunkfile.pas"/>
+        <Caret Line="184" Column="45" TopLine="162"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demochunkfile.pas"/>
+        <Caret Line="61" Column="40" TopLine="46"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientconnect.pas"/>
+        <Caret Line="2556" Column="47" TopLine="2542"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientconnect.pas"/>
+        <Caret Line="35" Column="84" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientconnect.pas"/>
+        <Caret Line="136" Column="29" TopLine="120"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientconnect.pas"/>
+        <Caret Line="2391" Column="40" TopLine="2388"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientconnect.pas"/>
+        <Caret Line="135" Column="23" TopLine="121"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

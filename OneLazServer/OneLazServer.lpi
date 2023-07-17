@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <MainUnitHasScaledStatement Value="False"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="OneLazServer"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="MemDSLaz"/>
+      </Item>
+      <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+      <Item>
+        <PackageName Value="mormot2"/>
+      </Item>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+    </RequiredPackages>
+    <Units>
+      <Unit>
+        <Filename Value="OneLazServer.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="frm_main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\onehttpserver.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneHttpServer"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\logger\oneilog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneILog"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\logger\onelog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneLog"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\thread\onethread.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneThread"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\func\onefilehelper.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneFileHelper"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\attribute\oneattribute.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneAttribute"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\crypto\onecrypto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneCrypto"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\crypto\onesqlcrypto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneSQLCrypto"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\crypto\onestreamstring.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneStreamString"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\func\onedatetimehelper.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneDateTimeHelper"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\func\oneguid.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneGUID"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\virtualFile\onevirtualfile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneVirtualFile"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\token\onetokenmanage.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneTokenManage"/>
+      </Unit>
+      <Unit>
+        <Filename Value="dbCenter\onedatainfo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneDataInfo"/>
+      </Unit>
+      <Unit>
+        <Filename Value="dbCenter\oneztmanage.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneZTManage"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\func\onemonitor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneMonitor"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\onecontrollerresult.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneControllerResult"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\onehttpconst.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneHttpConst"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\onehttpcontrollerrtti.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneHttpControllerRtti"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\onehttproutermanage.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneHttpRouterManage"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\onehttpctxtresult.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneHttpCtxtResult"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\func\onestopwatch.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneStopwatch"/>
+      </Unit>
+      <Unit>
+        <Filename Value="oneglobal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneGlobal"/>
+      </Unit>
+      <Unit>
+        <Filename Value="dbCenter\oneormrtti.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneOrmRtti"/>
+      </Unit>
+      <Unit>
+        <Filename Value="dbCenter\oneorm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneOrm"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\serialization\oneserialization.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneSerialization"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\onehttpcontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneHttpController"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\demo\democontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DemoController"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\controller\tokencontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="TokenController"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\controller\datacontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DataController"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\controller\virtualfilecontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="VirtualFileController"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\demo\demodatacontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DemoDataController"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\serialization\onedatajson.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneDataJson"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\demo\demojsoncontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DemoJsonController"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\demo\democustresult.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DemoCustResult"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\demo\demoztcontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DemoZTController"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\multipart\onemultipart.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneMultipart"/>
+      </Unit>
+      <Unit>
+        <Filename Value="httpServer\controller\unidemocontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="UniDemoController"/>
+      </Unit>
+      <Unit>
+        <Filename Value="OneFastClient\onefastlogincontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OneFastLoginController"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseLib\winRegister\OneWinReg.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="Bin\OneLazServer.exe" ApplyConventions="False"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="httpServer;baseLib\logger;baseLib\thread;baseLib\func;baseLib\attribute;baseLib\crypto;baseLib\virtualFile;baseLib\token;dbCenter;baseLib\serialization;httpServer\demo;httpServer\controller;baseLib\multipart;OneFastClient;baseLib\winRegister"/>
+      <UnitOutputDirectory Value="Bin\Dcu"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2Set"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions>
+      <Item>
+        <Name Value="EAbort"/>
+      </Item>
+      <Item>
+        <Name Value="ECodetoolError"/>
+      </Item>
+      <Item>
+        <Name Value="EFOpenError"/>
+      </Item>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

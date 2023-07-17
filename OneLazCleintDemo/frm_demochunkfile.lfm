@@ -1,0 +1,341 @@
+object frmDemoChunkFile: TfrmDemoChunkFile
+  Left = 331
+  Height = 568
+  Top = 197
+  Width = 756
+  Caption = '虚拟文件上传'
+  ClientHeight = 568
+  ClientWidth = 756
+  object GroupBox1: TGroupBox
+    Left = 0
+    Height = 88
+    Top = 0
+    Width = 756
+    Align = alTop
+    Caption = '连接设置'
+    ClientHeight = 66
+    ClientWidth = 752
+    TabOrder = 0
+    object edServerHost: TEdit
+      Left = 96
+      Height = 25
+      Top = 3
+      Width = 184
+      TabOrder = 0
+      Text = '127.0.0.1'
+    end
+    object Label1: TLabel
+      Left = 16
+      Height = 17
+      Top = 8
+      Width = 60
+      Caption = '服务端地址'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 296
+      Height = 17
+      Top = 37
+      Width = 48
+      Caption = '连接密钥'
+      ParentColor = False
+    end
+    object edServerKey: TEdit
+      Left = 376
+      Height = 25
+      Top = 32
+      Width = 184
+      TabOrder = 1
+    end
+    object Label3: TLabel
+      Left = 16
+      Height = 17
+      Top = 37
+      Width = 48
+      Caption = '连接账套'
+      ParentColor = False
+    end
+    object edServerZTCode: TEdit
+      Left = 96
+      Height = 25
+      Top = 32
+      Width = 184
+      TabOrder = 2
+    end
+    object tbConnect: TButton
+      Left = 584
+      Height = 25
+      Top = 3
+      Width = 123
+      Caption = '连接'
+      OnClick = tbConnectClick
+      TabOrder = 3
+    end
+    object tbConnectClose: TButton
+      Left = 584
+      Height = 25
+      Top = 32
+      Width = 123
+      Caption = '断开连接'
+      OnClick = tbConnectCloseClick
+      TabOrder = 4
+    end
+    object Label4: TLabel
+      Left = 296
+      Height = 17
+      Top = 5
+      Width = 48
+      Caption = '服务端口'
+      ParentColor = False
+    end
+    object edServerPort: TEdit
+      Left = 376
+      Height = 25
+      Top = 0
+      Width = 184
+      NumbersOnly = True
+      TabOrder = 5
+      Text = '9090'
+    end
+  end
+  object edRemark: TMemo
+    Left = 0
+    Height = 73
+    Top = 88
+    Width = 756
+    Align = alTop
+    Lines.Strings = (
+      '虚拟代码[VirtualCode]:对应服务端配置 比如TEST-->实际物理地址 D:/我的文档'
+      '远程文件[RemoteFile]:文件所在路径 /客户档案/范联满.excel'
+      '最终在服务跟据虚拟代码找到物理地址组成:D:/我的文档/客户档案/范联满.excel'
+    )
+    TabOrder = 1
+  end
+  object groupUpload: TGroupBox
+    Left = 8
+    Height = 369
+    Top = 175
+    Width = 369
+    Caption = '分块上传'
+    ClientHeight = 347
+    ClientWidth = 365
+    TabOrder = 2
+    object Label5: TLabel
+      Left = 16
+      Height = 17
+      Top = 3
+      Width = 48
+      Caption = '虚拟代码'
+      ParentColor = False
+    end
+    object Label6: TLabel
+      Left = 16
+      Height = 17
+      Top = 33
+      Width = 48
+      Caption = '远程文件'
+      ParentColor = False
+    end
+    object Label7: TLabel
+      Left = 16
+      Height = 17
+      Top = 64
+      Width = 48
+      Caption = '本地文件'
+      ParentColor = False
+    end
+    object Label10: TLabel
+      Left = 24
+      Height = 34
+      Top = 232
+      Width = 323
+      AutoSize = False
+      Caption = '上传成功返回文件名称,服务端如果存在相同名称文件,会有一个新的文件名称返回来'
+      Font.Color = clRed
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      ParentColor = False
+      ParentFont = False
+      WordWrap = True
+    end
+    object Label11: TLabel
+      Left = 24
+      Height = 17
+      Top = 275
+      Width = 60
+      Caption = '新文件名称'
+      ParentColor = False
+    end
+    object edVirtualCodeA: TEdit
+      Left = 98
+      Height = 25
+      Top = 0
+      Width = 241
+      TabOrder = 0
+    end
+    object edRemoteFileA: TEdit
+      Left = 98
+      Height = 25
+      Top = 30
+      Width = 241
+      TabOrder = 1
+    end
+    object edLocalFileA: TEdit
+      Left = 98
+      Height = 25
+      Top = 61
+      Width = 241
+      TabOrder = 2
+    end
+    object tbUpLoad: TButton
+      Left = 24
+      Height = 25
+      Top = 312
+      Width = 121
+      Caption = '单文件分块上传'
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Segoe UI'
+      OnClick = tbUpLoadClick
+      ParentFont = False
+      TabOrder = 3
+    end
+    object edNewFileName: TEdit
+      Left = 98
+      Height = 25
+      Top = 272
+      Width = 241
+      TabOrder = 4
+    end
+    object Label13: TLabel
+      Left = 16
+      Height = 17
+      Top = 96
+      Width = 195
+      Caption = '本地文件,批量上传一行一个本地文件'
+      ParentColor = False
+    end
+    object edLocalFileAList: TMemo
+      Left = 8
+      Height = 112
+      Top = 120
+      Width = 331
+      Lines.Strings = (
+        'd:\123.txt'
+        'd:\456.txt'
+        'd:\789.txt'
+      )
+      ScrollBars = ssBoth
+      TabOrder = 5
+    end
+    object tbUpLoadBatch: TButton
+      Left = 192
+      Height = 25
+      Top = 312
+      Width = 148
+      Caption = '文件批量分块上传'
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Segoe UI'
+      OnClick = tbUpLoadBatchClick
+      ParentFont = False
+      TabOrder = 6
+    end
+  end
+  object groupDown: TGroupBox
+    Left = 384
+    Height = 369
+    Top = 176
+    Width = 361
+    Caption = '分块下载'
+    ClientHeight = 347
+    ClientWidth = 357
+    TabOrder = 3
+    object Label8: TLabel
+      Left = 22
+      Height = 17
+      Top = 32
+      Width = 48
+      Caption = '虚拟代码'
+      ParentColor = False
+    end
+    object Label9: TLabel
+      Left = 22
+      Height = 17
+      Top = 71
+      Width = 48
+      Caption = '远程文件'
+      ParentColor = False
+    end
+    object Label12: TLabel
+      Left = 22
+      Height = 17
+      Top = 110
+      Width = 48
+      Caption = '本地文件'
+      ParentColor = False
+    end
+    object edVirtualCodeB: TEdit
+      Left = 104
+      Height = 25
+      Top = 29
+      Width = 241
+      TabOrder = 0
+    end
+    object edRemoteFileB: TEdit
+      Left = 104
+      Height = 25
+      Top = 68
+      Width = 241
+      TabOrder = 1
+    end
+    object edLocalFileB: TEdit
+      Left = 104
+      Height = 25
+      Top = 107
+      Width = 241
+      TabOrder = 2
+    end
+    object tbDownLoad: TButton
+      Left = 224
+      Height = 25
+      Top = 144
+      Width = 121
+      Caption = '分块下载'
+      OnClick = tbDownLoadClick
+      TabOrder = 3
+    end
+  end
+  object ProgressFile: TProgressBar
+    Left = 176
+    Height = 18
+    Top = 176
+    Width = 449
+    Step = 1
+    TabOrder = 4
+    Visible = False
+  end
+  object ProgressList: TProgressBar
+    Left = 208
+    Height = 18
+    Top = 152
+    Width = 345
+    Step = 1
+    TabOrder = 5
+    Visible = False
+  end
+  object OneConnection: TOneConnection
+    IsHttps = False
+    HTTPPort = 0
+    ConnectionTimeout = 0
+    ResponseTimeout = 0
+    Left = 576
+    Top = 80
+  end
+  object OneVirtualFile: TOneVirtualFile
+    Connection = OneConnection
+    ChunkBlock = 0
+    Left = 496
+    Top = 88
+  end
+end

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="clientdemodatas.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ClientDemoDatas"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="frm_demodatas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmDemoDatas"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_demoDatas"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="151"/>
+        <CursorPos X="38" Y="176"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\OneClient\oneclienthelper.pas"/>
+        <UnitName Value="OneClientHelper"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="89"/>
+        <CursorPos Y="108"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\OneClient\oneclientdataset.pas"/>
+        <UnitName Value="OneClientDataSet"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="1047"/>
+        <CursorPos X="68" Y="1083"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\OneClient\oneclientconnect.pas"/>
+        <UnitName Value="OneClientConnect"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="180"/>
+        <CursorPos Y="195"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="28">
+      <Position>
+        <Filename Value="frm_demodatas.pas"/>
+        <Caret Line="42" Column="50" TopLine="21"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demodatas.pas"/>
+        <Caret Line="41" Column="50" TopLine="21"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demodatas.pas"/>
+        <Caret Line="40" Column="50" TopLine="20"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demodatas.pas"/>
+        <Caret Line="39" Column="50" TopLine="20"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demodatas.pas"/>
+        <Caret Line="38" Column="50" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demodatas.pas"/>
+        <Caret Line="37" Column="50" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demodatas.pas"/>
+        <Caret Line="36" Column="50" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demodatas.pas"/>
+        <Caret Line="35" Column="50" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demodatas.pas"/>
+        <Caret Line="40" Column="43" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demodatas.pas"/>
+        <Caret Line="41" Column="47" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demodatas.pas"/>
+        <Caret Line="49" Column="41" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demodatas.pas"/>
+        <Caret Line="68" Column="49" TopLine="55"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demodatas.pas"/>
+        <Caret Line="98" Column="68" TopLine="87"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demodatas.pas"/>
+        <Caret Line="151" Column="38" TopLine="117"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demodatas.pas"/>
+        <Caret Line="98" Column="72" TopLine="89"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demodatas.pas"/>
+        <Caret Line="103" Column="60" TopLine="89"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demodatas.pas"/>
+        <Caret Line="119" Column="3" TopLine="98"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demodatas.pas"/>
+        <Caret Line="17" Column="39"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclienthelper.pas"/>
+        <Caret Line="16" Column="37"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientdataset.pas"/>
+        <Caret Line="960" Column="33" TopLine="949"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientdataset.pas"/>
+        <Caret Line="1029" Column="31" TopLine="1003"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientdataset.pas"/>
+        <Caret Line="475" Column="34" TopLine="439"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientdataset.pas"/>
+        <Caret Line="974" Column="37" TopLine="810"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientdataset.pas"/>
+        <Caret Line="188" Column="22" TopLine="168"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientdataset.pas"/>
+        <Caret Line="1040" Column="46" TopLine="1018"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientdataset.pas"/>
+        <Caret Line="1064" Column="21" TopLine="1029"/>
+      </Position>
+      <Position>
+        <Filename Value="..\OneClient\oneclientdataset.pas"/>
+        <Caret Line="1083" Column="68" TopLine="1047"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demodatas.pas"/>
+        <Caret Line="144" Column="57" TopLine="126"/>
+      </Position>
+      <Position>
+        <Filename Value="frm_demodatas.pas"/>
+        <Caret Line="158" Column="45" TopLine="127"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

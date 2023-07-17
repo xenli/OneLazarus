@@ -1,0 +1,309 @@
+object Form1: TForm1
+  Left = 478
+  Height = 455
+  Top = 198
+  Width = 730
+  Caption = '数据打开保存基本Demo'
+  ClientHeight = 455
+  ClientWidth = 730
+  LCLVersion = '2.2.4.0'
+  object GroupBox1: TGroupBox
+    Left = 0
+    Height = 88
+    Top = 0
+    Width = 730
+    Align = alTop
+    Caption = '连接设置'
+    ClientHeight = 66
+    ClientWidth = 726
+    TabOrder = 0
+    object edServerHost: TEdit
+      Left = 96
+      Height = 25
+      Top = 3
+      Width = 184
+      TabOrder = 0
+      Text = '127.0.0.1'
+    end
+    object Label1: TLabel
+      Left = 16
+      Height = 17
+      Top = 8
+      Width = 60
+      Caption = '服务端地址'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 296
+      Height = 17
+      Top = 37
+      Width = 48
+      Caption = '连接密钥'
+      ParentColor = False
+    end
+    object edServerKey: TEdit
+      Left = 376
+      Height = 25
+      Top = 32
+      Width = 184
+      TabOrder = 1
+    end
+    object Label3: TLabel
+      Left = 16
+      Height = 17
+      Top = 37
+      Width = 48
+      Caption = '连接账套'
+      ParentColor = False
+    end
+    object edServerZTCode: TEdit
+      Left = 96
+      Height = 25
+      Top = 32
+      Width = 184
+      TabOrder = 2
+    end
+    object tbConnect: TButton
+      Left = 584
+      Height = 25
+      Top = 3
+      Width = 123
+      Caption = '连接'
+      OnClick = tbConnectClick
+      TabOrder = 3
+    end
+    object tbConnectClose: TButton
+      Left = 584
+      Height = 25
+      Top = 32
+      Width = 123
+      Caption = '断开连接'
+      OnClick = tbConnectCloseClick
+      TabOrder = 4
+    end
+    object Label4: TLabel
+      Left = 296
+      Height = 17
+      Top = 5
+      Width = 48
+      Caption = '服务端口'
+      ParentColor = False
+    end
+    object edServerPort: TEdit
+      Left = 376
+      Height = 25
+      Top = 0
+      Width = 184
+      NumbersOnly = True
+      TabOrder = 5
+      Text = '9090'
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 0
+    Height = 367
+    Top = 88
+    Width = 730
+    Align = alClient
+    Caption = '基本打开保存'
+    ClientHeight = 345
+    ClientWidth = 726
+    TabOrder = 1
+    object edSQL: TMemo
+      Left = 16
+      Height = 90
+      Top = 24
+      Width = 328
+      Lines.Strings = (
+        'select * from test'
+        'where code=:code'
+      )
+      TabOrder = 0
+    end
+    object edSQLParams: TMemo
+      Left = 376
+      Height = 90
+      Top = 24
+      Width = 331
+      TabOrder = 1
+    end
+    object Label5: TLabel
+      Left = 16
+      Height = 17
+      Top = 0
+      Width = 47
+      Caption = 'SQL语句'
+      ParentColor = False
+    end
+    object Label6: TLabel
+      Left = 376
+      Height = 17
+      Top = 0
+      Width = 84
+      Caption = '参数一行一个值'
+      ParentColor = False
+    end
+    object Label7: TLabel
+      Left = 16
+      Height = 17
+      Top = 133
+      Width = 24
+      Caption = '表名'
+      ParentColor = False
+    end
+    object edTableName: TEdit
+      Left = 56
+      Height = 25
+      Top = 128
+      Width = 120
+      TabOrder = 2
+    end
+    object Label8: TLabel
+      Left = 192
+      Height = 17
+      Top = 133
+      Width = 24
+      Caption = '主键'
+      ParentColor = False
+    end
+    object edPrimaryKey: TEdit
+      Left = 232
+      Height = 25
+      Top = 128
+      Width = 112
+      TabOrder = 3
+    end
+    object Label9: TLabel
+      Left = 376
+      Height = 17
+      Top = 133
+      Width = 36
+      Caption = '第几页'
+      ParentColor = False
+    end
+    object edPageNow: TEdit
+      Left = 424
+      Height = 25
+      Top = 128
+      Width = 104
+      NumbersOnly = True
+      TabOrder = 4
+      Text = '-1'
+    end
+    object Label10: TLabel
+      Left = 544
+      Height = 17
+      Top = 133
+      Width = 48
+      Caption = '分页大小'
+      ParentColor = False
+    end
+    object edPageSize: TEdit
+      Left = 603
+      Height = 25
+      Top = 128
+      Width = 104
+      NumbersOnly = True
+      TabOrder = 5
+      Text = '-1'
+    end
+    object DBGrid1: TDBGrid
+      Left = 16
+      Height = 140
+      Top = 192
+      Width = 691
+      Color = clWindow
+      Columns = <>
+      DataSource = dsData
+      TabOrder = 6
+    end
+    object tbOpenData: TButton
+      Left = 16
+      Height = 25
+      Top = 160
+      Width = 123
+      Caption = '打开'
+      OnClick = tbOpenDataClick
+      TabOrder = 7
+    end
+    object tbSaveData: TButton
+      Left = 152
+      Height = 25
+      Top = 160
+      Width = 123
+      Caption = '保存'
+      OnClick = tbSaveDataClick
+      TabOrder = 8
+    end
+    object Label11: TLabel
+      Left = 376
+      Height = 17
+      Top = 165
+      Width = 36
+      Caption = '总页数'
+      ParentColor = False
+    end
+    object edPageCount: TEdit
+      Left = 424
+      Height = 25
+      Top = 160
+      Width = 104
+      NumbersOnly = True
+      ReadOnly = True
+      TabOrder = 9
+      Text = '0'
+    end
+    object Label12: TLabel
+      Left = 555
+      Height = 17
+      Top = 165
+      Width = 36
+      Caption = '总条数'
+      ParentColor = False
+    end
+    object edPageTotal: TEdit
+      Left = 603
+      Height = 25
+      Top = 160
+      Width = 104
+      NumbersOnly = True
+      TabOrder = 10
+      Text = '-1'
+    end
+  end
+  object OneConnection: TOneConnection
+    IsHttps = False
+    HTTPPort = 0
+    ConnectionTimeout = 0
+    ResponseTimeout = 0
+    Left = 568
+    Top = 88
+  end
+  object qryData: TOneDataSet
+    FieldDefs = <>
+    DataInfo.IsDesignGetFields = False
+    DataInfo.OpenMode = openData
+    DataInfo.SaveMode = saveData
+    DataInfo.DataReturnMode = dataStream
+    DataInfo.PageSize = -1
+    DataInfo.PageIndex = 0
+    DataInfo.PageCount = 0
+    DataInfo.PageTotal = 0
+    DataInfo.AffectedMaxCount = 0
+    DataInfo.AffectedMustCount = 1
+    DataInfo.RowsAffected = 0
+    DataInfo.AsynMode = False
+    DataInfo.IsReturnData = False
+    DataInfo.TranSpanSec = 0
+    Params = <>
+    MultiIndex = 0
+    UpdateMode = upWhereChanged
+    Left = 128
+    Top = 80
+  end
+  object dsData: TDataSource
+    DataSet = qryData
+    Left = 184
+    Top = 80
+  end
+end

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="5">
+    <PathDelim Value="\"/>
+    <Name Value="OneClient"/>
+    <Type Value="RunAndDesignTime"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="baselib"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Files>
+      <Item>
+        <Filename Value="oneclientconnect.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="OneClientConnect"/>
+      </Item>
+      <Item>
+        <Filename Value="oneclientconst.pas"/>
+        <UnitName Value="OneClientConst"/>
+      </Item>
+      <Item>
+        <Filename Value="oneclientdataset.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="OneClientDataSet"/>
+      </Item>
+      <Item>
+        <Filename Value="oneclienthelper.pas"/>
+        <UnitName Value="OneClientHelper"/>
+      </Item>
+      <Item>
+        <Filename Value="oneclientresult.pas"/>
+        <UnitName Value="OneClientResult"/>
+      </Item>
+      <Item>
+        <Filename Value="oneclientvirtualfile.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="OneClientVirtualFile"/>
+      </Item>
+      <Item>
+        <Filename Value="baselib\oneclientdatainfo.pas"/>
+        <UnitName Value="OneClientDataInfo"/>
+      </Item>
+      <Item>
+        <Filename Value="baselib\onecrypto.pas"/>
+        <UnitName Value="OneCrypto"/>
+      </Item>
+      <Item>
+        <Filename Value="baselib\onefilehelper.pas"/>
+        <UnitName Value="OneFileHelper"/>
+      </Item>
+      <Item>
+        <Filename Value="baselib\oneserialization.pas"/>
+        <UnitName Value="OneSerialization"/>
+      </Item>
+      <Item>
+        <Filename Value="baselib\onesqlcrypto.pas"/>
+        <UnitName Value="OneSQLCrypto"/>
+      </Item>
+      <Item>
+        <Filename Value="baselib\onestreamstring.pas"/>
+        <UnitName Value="OneStreamString"/>
+      </Item>
+      <Item>
+        <Filename Value="baselib\onethread.pas"/>
+        <UnitName Value="OneThread"/>
+      </Item>
+      <Item>
+        <Filename Value="baselib\onezipstream.pas"/>
+        <UnitName Value="OneZipStream"/>
+      </Item>
+      <Item>
+        <Filename Value="baselib\onedatajson.pas"/>
+        <UnitName Value="OneDataJson"/>
+      </Item>
+      <Item>
+        <Filename Value="baselib\onelog.pas"/>
+        <UnitName Value="OneLog"/>
+      </Item>
+      <Item>
+        <Filename Value="baselib\oneasynthread.pas"/>
+        <UnitName Value="oneasynthread"/>
+      </Item>
+    </Files>
+    <RequiredPkgs>
+      <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>
