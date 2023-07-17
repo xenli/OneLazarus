@@ -1,6 +1,7 @@
 # OneLazarus简介
-OneLazarus是基于lazarus+fpc-pascal（开发pascal另一神器，和Delphi不同的是它们是开源免费的）开发的一个收费高效的(OneServer)中间件，包括针对lazarus端开发的(OneClient)控件包。  
-支持win平台,liunx平台,ios平台等一些主流平台。其出色的MVC架构以及传统DataSet双架构,让人眼前一亮。。。飞一般的感觉， 你还在等什么呢？   
+OneLazarus是基于lazarus+fpc-pascal（开发pascal另一神器，和Delphi不同的是它们是开源免费的）开发的一个收费高效的(OneServer)中间件，包括针对lazarus端开发的(OneClient)控件包。   
+支持win平台,liunx平台,ios平台等一些主流平台。其出色的MVC架构以及传统DataSet双架构,让人眼前一亮。。。 
+飞一般的感觉， 你还在等什么呢？   
 无任何隐藏代码，全源码，无任何后门,叫兽出品必属精品。   
 
 [![Security Status](https://www.murphysec.com/platform3/v31/badge/1676410356589420544.svg)](https://www.murphysec.com/console/report/1676410356530700288/1676410356589420544)
@@ -22,7 +23,7 @@ QQ群：814696487（原来的群被封了，请加新群）
 ## 开发工具简介：
 ### 基于lazarus IDE开发工具开发的,支持Lazarus2.2以上的版本。
 
-## OneServer(OneLaz)中间件功能简介:  
+## OneLazServer(OneLaz)中间件功能简介:  
 	1.提供HTTP服务与及webSocket服务， 基于开源平台Mormot2承担数据传输，保证通讯层的稳定性。  
 	2.提供多账套多数据库服务，基于delphi自代的库FireDac。支持常见的主流数据库SQLServer,MySQL,Oracel,PG,SQLite...等  
 	3.提供MVC-Controller接口功能,让你专注业务。MVC接口介绍  
@@ -35,13 +36,39 @@ QQ群：814696487（原来的群被封了，请加新群）
 	10.提供与Uniapp前开开发工具,快速开发相关功能的演示MVC接口介绍  
 	11.提供与微信公众号和微信小程序基本接口交互功能MVC接口介绍  
 	等等等其它功能,就不全一一介绍,你还在等什么呢？  
+## 控件包mormot2下载，群文件里面也有直接到群下载也行
+  https://github.com/synopse/mORMot2
+	*注意：*	static目录里的文件需要单独下载  
+	https://synopse.info/files/mormot2static.7z   
+	
+## OneLazServer相关截图：	
+### 1.启动时主页
+![](http://pascal.callbaba.cn/assets/LazHome-43a7f966.png "title")	
 
+### 2.路由管理
+![](http://pascal.callbaba.cn/assets/LazRouter-ef2aacbd.png "title")	
+
+### 3.Http服务及WebSocket服务
+![](http://pascal.callbaba.cn/assets/LazHttp-2e077fda.png "title")	
+
+### 4.账套管理
+![](http://pascal.callbaba.cn/assets/LazDB-f0fd208c.png "title")	
+
+### 5.日志管理
+![](http://pascal.callbaba.cn/assets/LazLog-3f9bfa8a.png "title")	
+
+### 6.登陆信息管理
+![](http://pascal.callbaba.cn/assets/LazToken-fad02d87.png "title")	
+
+### 7.虚拟目录管理
+![](http://pascal.callbaba.cn/assets/LazFile-5bac118a.png "title")	
 
 ## 更新日志
 **********2023-07-17**********
 服务端：  
 	1.调整了设置启动、停止服务状态显示  
 	2.启用自启动功能  
+	3.修复了路由序号
 
 **********2023-02-09**********
 服务端:  
