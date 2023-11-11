@@ -589,6 +589,7 @@ begin
   if IsMultipartForm(self.FRequestContentType) then
   begin
     // 不做处理到自已单元处理
+    FRequestInContent := qInContent;
   end
   else if FRequestContentTypeCharset = 'UTF-8' then
   begin

@@ -49,17 +49,14 @@ type
     { 验证Token 签名 合法性 }
     function CheckSign(QHTTPCtxt: THTTPCtxt; QHTTPResult: THTTPResult): boolean; virtual;
     // 获取方法参数值   var QParamNewObjs: TList<Tobject>
-    function DoMethodGetParams(QHTTPCtxt: THTTPCtxt; QHTTPResult: THTTPResult;
-      QOneMethodRtti: TOneMethodRtti; QParamObjRttiList: TList<TRttiType>;
-      QParamNewObjList: TList<TObject>; var QErrMsg: string): TArray<TValue>;
+    function DoMethodGetParams(QHTTPCtxt: THTTPCtxt; QHTTPResult: THTTPResult; QOneMethodRtti: TOneMethodRtti;
+      QParamObjRttiList: TList<TRttiType>; QParamNewObjList: TList<TObject>; var QErrMsg: string): TArray<TValue>;
     { 执行相关方法 }
-    procedure DoMethodFreeParams(QParamObjList: TList<TObject>;
-      QParamObjRttiList: TList<TRttiType>);
-    procedure DoMethod(QHTTPCtxt: THTTPCtxt; QHTTPResult: THTTPResult;
-      QParamNewObjList: TList<TObject>; QParamObjRttiList: TList<TRttiType>); virtual;
+    procedure DoMethodFreeParams(QParamObjList: TList<TObject>; QParamObjRttiList: TList<TRttiType>);
+    procedure DoMethod(QHTTPCtxt: THTTPCtxt; QHTTPResult: THTTPResult; QParamNewObjList: TList<TObject>;
+      QParamObjRttiList: TList<TRttiType>); virtual;
     //各个方法实现
-    function DoInvoke(QRttiMethod: TRttiMethod;
-      const aArgs: array of TValue): TValue; virtual;
+    function DoInvoke(QRttiMethod: TRttiMethod; const aArgs: array of TValue): TValue; virtual;
     { 结果输出编码设置 }
     procedure EndCodeResultOutB(QHTTPCtxt: THTTPCtxt; QHTTPResult: THTTPResult); virtual;
 
@@ -72,8 +69,7 @@ type
     destructor Destroy; override;
     { 工作 }
     // function DoWork(Ctxt:THttpServerRequest;QWorkInfo:THTTPWorkInfo):cardinal;virtual;overload;
-    function DoWork(QHTTPCtxt: THTTPCtxt; QHTTPResult: THTTPResult;
-      QRouterItem: TOneRouterItem): cardinal; virtual;
+    function DoWork(QHTTPCtxt: THTTPCtxt; QHTTPResult: THTTPResult; QRouterItem: TOneRouterItem): cardinal; virtual;
   published
     // property AutoJsonResult:Boolean read FAutoJsonResult write FAutoJsonResult;
     property bAllowOrigin: boolean read FbAllowOrigin write FbAllowOrigin;
@@ -271,8 +267,7 @@ begin
   Result := True;
 end;
 
-function TOneControllerBase.CheckAuthor(QHTTPCtxt: THTTPCtxt;
-  QHTTPResult: THTTPResult): boolean;
+function TOneControllerBase.CheckAuthor(QHTTPCtxt: THTTPCtxt; QHTTPResult: THTTPResult): boolean;
 var
   lBearerToken: string;
 begin
@@ -298,8 +293,7 @@ begin
   end;
 end;
 
-function TOneControllerBase.CheckToken(QHTTPCtxt: THTTPCtxt;
-  QHTTPResult: THTTPResult): boolean;
+function TOneControllerBase.CheckToken(QHTTPCtxt: THTTPCtxt; QHTTPResult: THTTPResult): boolean;
 var
   lTokenID: string;
 begin
@@ -324,8 +318,7 @@ begin
   end;
 end;
 
-function TOneControllerBase.CheckSign(QHTTPCtxt: THTTPCtxt;
-  QHTTPResult: THTTPResult): boolean;
+function TOneControllerBase.CheckSign(QHTTPCtxt: THTTPCtxt; QHTTPResult: THTTPResult): boolean;
 var
   lTokenID: string;
   lTimeStr: string;
@@ -362,8 +355,7 @@ begin
   end;
 end;
 
-function TOneControllerBase.DoWork(QHTTPCtxt: THTTPCtxt; QHTTPResult: THTTPResult;
-  QRouterItem: TOneRouterItem): cardinal;
+function TOneControllerBase.DoWork(QHTTPCtxt: THTTPCtxt; QHTTPResult: THTTPResult; QRouterItem: TOneRouterItem): cardinal;
 var
   i: integer;
   LParamNewObjList: TList<TObject>;
@@ -465,17 +457,14 @@ begin
   end;
 end;
 
-procedure TOneControllerBase.EndCodeResultOutB(QHTTPCtxt: THTTPCtxt;
-  QHTTPResult: THTTPResult);
+procedure TOneControllerBase.EndCodeResultOutB(QHTTPCtxt: THTTPCtxt; QHTTPResult: THTTPResult);
 begin
   OneHttpCtxtResult.EndCodeResultOut(QHTTPCtxt, QHTTPResult);
 end;
 
 // ;var QParamNewObjs: TList<Tobject>
-function TOneControllerBase.DoMethodGetParams(QHTTPCtxt: THTTPCtxt;
-  QHTTPResult: THTTPResult; QOneMethodRtti: TOneMethodRtti;
-  QParamObjRttiList: TList<TRttiType>; QParamNewObjList: TList<TObject>;
-  var QErrMsg: string): TArray<TValue>;
+function TOneControllerBase.DoMethodGetParams(QHTTPCtxt: THTTPCtxt; QHTTPResult: THTTPResult; QOneMethodRtti: TOneMethodRtti;
+  QParamObjRttiList: TList<TRttiType>; QParamNewObjList: TList<TObject>; var QErrMsg: string): TArray<TValue>;
 var
   lArgs: TArray<TValue>;
   lParameters: TArray<TRttiParameter>;
@@ -605,12 +594,29 @@ begin
           QErrMsg := 'post提交无任何数据';
           exit;
         end;
-        // 转成JSON参数
-        lJSonValue := GetJSON(QHTTPCtxt.RequestInContent);
-        if lJSonValue = nil then
+        // 判断是不是表单
+        if OneMultipart.IsMultipartForm(QHTTPCtxt.RequestContentType) then
         begin
-          QErrMsg := '提交的数据不是合法JSON格式';
-          exit;
+          if iParamLen > 1 then
+          begin
+            QErrMsg := '表单提交,只能有一个参数且类型TOneMultipartDecode';
+            exit;
+          end;
+        end
+        else
+        begin
+          // 转成JSON参数
+          lJSonValue := GetJSON(QHTTPCtxt.RequestInContent);
+          if lJSonValue = nil then
+          begin
+            QErrMsg := '提交的数据不是合法JSON格式';
+            exit;
+          end;
+          if not ((lJSonValue is TJsonObject) or (lJSonValue is TJSONArray)) then
+          begin
+            QErrMsg := '提交的数据不是合法JSON格式';
+            exit;
+          end;
         end;
 
         for iParam := Low(lParameters) to High(lParameters) do
@@ -723,8 +729,7 @@ begin
                 if iParamLen > 1 then
                 begin
                   QErrMsg :=
-                    '提交的参数' + lParam.Name +
-                    '是必需的参数,否则对像为nil';
+                    '提交的参数' + lParam.Name + '是必需的参数,否则对像为nil';
                   exit;
                 end;
                 if (lJSonValue is TJsonObject) or (lJSonValue is TJSONArray) then
@@ -736,16 +741,14 @@ begin
                 end
                 else
                 begin
-                  QErrMsg := '提交的参数' + lParam.Name +
-                    '必需是Json对象或JSON数组';
+                  QErrMsg := '提交的参数' + lParam.Name + '必需是Json对象或JSON数组';
                   exit;
                 end;
               end
               else if lParamTClass.InheritsFrom(TOneMultipartDecode) then
               begin
                 lMultipartDecode :=
-                  OneMultipart.MultiPartFormDataDecode(QHTTPCtxt.RequestContentType,
-                  QHTTPCtxt.RequestInContent);
+                  OneMultipart.MultiPartFormDataDecode(QHTTPCtxt.RequestContentType, QHTTPCtxt.RequestInContent);
                 if lMultipartDecode = nil then
                 begin
                   QErrMsg := '不是表单multipart/form-data';
@@ -766,8 +769,7 @@ begin
                   except
                     // 找不到传nil
                     QErrMsg :=
-                      '提交的参数' + lParam.Name +
-                      '是必需的参数,否则对像为nil';
+                      '提交的参数' + lParam.Name + '是必需的参数,否则对像为nil';
                     exit;
                   end;
                 end;
@@ -807,8 +809,7 @@ begin
                 except
                   // 找不到传nil
                   QErrMsg :=
-                    '提交的参数' + lParam.Name +
-                    '是必需的参数,否则对像为nil';
+                    '提交的参数' + lParam.Name + '是必需的参数,否则对像为nil';
                   exit;
                 end;
               end;
@@ -939,8 +940,7 @@ begin
   Result := lArgs;
 end;
 
-procedure TOneControllerBase.DoMethodFreeParams(QParamObjList: TList<TObject>;
-  QParamObjRttiList: TList<TRttiType>);
+procedure TOneControllerBase.DoMethodFreeParams(QParamObjList: TList<TObject>; QParamObjRttiList: TList<TRttiType>);
 var
   i, iItem: integer;
   lParamRtti: TRttiType;
@@ -1033,8 +1033,7 @@ begin
   end;
 end;
 
-procedure TOneControllerBase.DoMethod(QHTTPCtxt: THTTPCtxt;
-  QHTTPResult: THTTPResult; QParamNewObjList: TList<TObject>;
+procedure TOneControllerBase.DoMethod(QHTTPCtxt: THTTPCtxt; QHTTPResult: THTTPResult; QParamNewObjList: TList<TObject>;
   QParamObjRttiList: TList<TRttiType>);
 var
   lOneMethodRtti: TOneMethodRtti;
@@ -1102,8 +1101,7 @@ begin
       end;
       sysProcedure, sysFunction:
       begin
-        lArgs := self.DoMethodGetParams(QHTTPCtxt, QHTTPResult,
-          lOneMethodRtti, QParamObjRttiList, QParamNewObjList, lParamErrMsg);
+        lArgs := self.DoMethodGetParams(QHTTPCtxt, QHTTPResult, lOneMethodRtti, QParamObjRttiList, QParamNewObjList, lParamErrMsg);
         if lParamErrMsg <> '' then
         begin
           QHTTPResult.ResultMsg := lParamErrMsg;
@@ -1151,8 +1149,7 @@ begin
           else
           begin
             QHTTPResult.ResultMsg :=
-              '未支持的函数[' + QHTTPCtxt.ControllerMethodName +
-              ']返回值类型!!!';
+              '未支持的函数[' + QHTTPCtxt.ControllerMethodName + ']返回值类型!!!';
             exit;
           end;
         end;
@@ -1171,12 +1168,10 @@ begin
   end;
 end;
 
-function TOneControllerBase.DoInvoke(QRttiMethod: TRttiMethod;
-  const aArgs: array of TValue): TValue;
+function TOneControllerBase.DoInvoke(QRttiMethod: TRttiMethod; const aArgs: array of TValue): TValue;
 begin
   Result := nil;
-  raise Exception.Create(
-    '请各自控制层类自已实现DoInvoke方法,可能参考Demo');
+  raise Exception.Create('请各自控制层类自已实现DoInvoke方法,可能参考Demo');
 end;
 
 end.

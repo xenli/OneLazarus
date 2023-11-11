@@ -13,7 +13,7 @@ uses
   ComCtrls, DB, BufDataset, SQLDB, SQLDBLib, memds, IBConnection, SQLite3Conn,
   PQConnection, oracleconnection, odbcconn, mysql40conn, mysql41conn,
   mysql50conn, mysql51conn, mysql55conn, mysql56conn, mysql57conn, mysql80conn,
-  MSSQLConn, OneLog, DBCtrls, Menus, OneFileHelper,  OneWinReg,
+  MSSQLConn, OneLog, DBCtrls, Menus, OneFileHelper,
   OneHttpRouterManage, Buttons, ExtCtrls, DBGrids, process, LCLIntf;
 
 type
@@ -253,7 +253,6 @@ type
     procedure OpenZTMange();
     procedure OpenVirtualMange();
     procedure OpenZTPool();
-    procedure SetBtnZT;
   end;
 
 var
@@ -282,7 +281,7 @@ begin
   for lRouterItem in lRouterItems.values do
   begin
     qryRouter.Append;
-    qryRouterFOrderNumber.AsInteger := qryRouter.RecordCount + 1;    //qryRouter.RecNo + 2;
+    qryRouterFOrderNumber.AsInteger := qryRouter.RecNo + 2;
     qryRouterFRootName.AsString := lRouterItem.RootName;
     qryRouterFClassName.AsString := lRouterItem.RootClassName;
     qryRouterFPoolMaxCount.AsInteger := lRouterItem.PoolMaxCount;
@@ -326,13 +325,14 @@ var
   lErrMsg: string;
   lOneGlobal: TOneGlobal;
 begin
-  lOneGlobal := TOneGlobal.GetInstance();
-  OneWinReg.WinAutoStart(OneFileHelper.GetExeName(), Application.ExeName,chWinRegisterStart.Checked);
-  lOneGlobal.ServerSet.WinRegisterStart := chWinRegisterStart.Checked;
-  if not lOneGlobal.SaveServerSet(lErrMsg) then
-  begin
-    ShowMessage(lErrMsg);
-  end;
+  //lOneGlobal := TOneGlobal.GetInstance();
+  //OneWinReg.WinAutoStart(OneFileHelper.GetExeName(), Application.ExeName,
+  //  chWinRegisterStart.Checked);
+  //lOneGlobal.ServerSet.WinRegisterStart := chWinRegisterStart.Checked;
+  //if not lOneGlobal.SaveServerSet(lErrMsg) then
+  //begin
+  //  ShowMessage(lErrMsg);
+  //end;
 end;
 
 procedure TfrmMain.chWinTaskStartClick(Sender: TObject);
@@ -340,13 +340,14 @@ var
   lErrMsg: string;
   lOneGlobal: TOneGlobal;
 begin
-  lOneGlobal := TOneGlobal.GetInstance();
-  OneWinReg.WinTaskStart(OneFileHelper.GetExeName(), Application.ExeName, chWinTaskStart.Checked);
-  lOneGlobal.ServerSet.WinTaskStart := chWinTaskStart.Checked;
-  if not lOneGlobal.SaveServerSet(lErrMsg) then
-  begin
-    ShowMessage(lErrMsg);
-  end;
+  //lOneGlobal := TOneGlobal.GetInstance();
+  //OneWinReg.WinTaskStart(OneFileHelper.GetExeName(), Application.ExeName,
+  //  chWinTaskStart.Checked);
+  //lOneGlobal.ServerSet.WinTaskStart := chWinTaskStart.Checked;
+  //if not lOneGlobal.SaveServerSet(lErrMsg) then
+  //begin
+  //  ShowMessage(lErrMsg);
+  //end;
 end;
 
 procedure TfrmMain.dbGridZTSetDblClick(Sender: TObject);
@@ -362,7 +363,7 @@ begin
   begin
     Action := TCloseAction.caNone;
     self.Hide;
-    TrayIcon1.BalloonTitle := 'OneLaz服务';
+    TrayIcon1.BalloonTitle := 'OneDelphi服务';
     TrayIcon1.BalloonHint := '最小化至托盘';
     TrayIcon1.ShowBalloonHint;
   end;
@@ -400,9 +401,18 @@ begin
   self.OpenVirtualMange();
 
   self.OpenZTPool();
-  self.SetBtnZT;
+  if lOneGlobal.HttpServer.Started then
+    lbServerHint.Caption := 'HTTP运行状态:端口[' + lOneGlobal.HttpServer.Port.ToString + '],状态[启动]'
+  else
+    lbServerHint.Caption := 'HTTP运行状态:端口[' + lOneGlobal.HttpServer.Port.ToString + '],状态[未启动]';
+  if OneHttpRouterManage.GetInitRouterManage().ErrMsg <> '' then
+  begin
+    lbServerHint.Caption := lbServerHint.Caption + ';路由注册状态[错误]';
+    edRouterErrMsg.Lines.Text := OneHttpRouterManage.GetInitRouterManage().ErrMsg;
+  end;
 
 end;
+
 
 procedure TfrmMain.OpenZTMange();
 var
@@ -488,31 +498,6 @@ begin
   end;
 end;
 
-procedure TfrmMain.SetBtnZT;
-var
-  lOneGlobal: TOneGlobal;
-  lErrMsg: string;
-begin
-  lOneGlobal := TOneGlobal.GetInstance();
-  if lOneGlobal.HttpServer.Started then
-  begin
-    lbServerHint.Caption := 'HTTP运行状态:端口[' + lOneGlobal.HttpServer.Port.ToString + '],状态[启动]';
-    tbStart.Enabled := False;
-    tbStop.Enabled := True;
-  end
-  else
-  begin
-    lbServerHint.Caption := 'HTTP运行状态:端口[' + lOneGlobal.HttpServer.Port.ToString + '],状态[未启动]';
-    tbStart.Enabled := True;
-    tbStop.Enabled := False;
-  end;
-  if OneHttpRouterManage.GetInitRouterManage().ErrMsg <> '' then
-  begin
-    lbServerHint.Caption := lbServerHint.Caption + ';路由注册状态[错误]';
-    edRouterErrMsg.Lines.Text := OneHttpRouterManage.GetInitRouterManage().ErrMsg;
-  end;
-end;
-
 procedure TfrmMain.FormDestroy(Sender: TObject);
 begin
   TOneGlobal.GetInstance().Free;
@@ -585,13 +570,13 @@ begin
   begin
     lOneLog.CallBack := self.MsgCallBack;
     lOneLog.IsOut := True;
-    tbOutLogStart.Caption := '关闭即时日志';
+    tbOutLogStart.Caption := '关闭即时日记';
   end
   else
   begin
     lOneLog.IsOut := False;
     lOneLog.CallBack := nil;
-    tbOutLogStart.Caption := '开启即时日志';
+    tbOutLogStart.Caption := '开启即时日记';
   end;
 end;
 
@@ -614,7 +599,6 @@ begin
         edLog.Lines.Add(lTimeString + '->' + QMsg);
       finally
         edLog.Lines.EndUpdate;
-        SendMessage(edLog.Handle, WM_VSCROLL, SB_BOTTOM, 0);
       end;
     end);
   {$ENDIF}
@@ -743,12 +727,19 @@ begin
     exit;
   end;
   try
-    if not lOneGlobal.HTTPServerStart(lErrMsg) then
+    if lOneGlobal.HTTPServerStart(lErrMsg) then
+    begin
+      ShowMessage('启动服务成功,当前启动HTTP服务端口:' + lOneGlobal.HttpServer.Port.ToString);
+    end
+    else
     begin
       ShowMessage(lErrMsg);
     end;
   finally
-    setBtnZT;
+    if lOneGlobal.HttpServer.Started then
+      lbServerHint.Caption := 'HTTP运行状态:端口[' + lOneGlobal.HttpServer.Port.ToString + '],状态[启动]'
+    else
+      lbServerHint.Caption := 'HTTP运行状态:端口[' + lOneGlobal.HttpServer.Port.ToString + '],状态[未启动]';
   end;
 end;
 
@@ -761,11 +752,14 @@ begin
   begin
     exit;
   end;
-  if not lOneGlobal.HttpServer.ServerStop() then
+  if lOneGlobal.HttpServer.ServerStop() then
+  begin
+    ShowMessage('停止服务成功');
+  end
+  else
   begin
     ShowMessage(lOneGlobal.HttpServer.ErrMsg);
   end;
-  setBtnZT;
 end;
 
 procedure TfrmMain.tbTokenSaveClick(Sender: TObject);

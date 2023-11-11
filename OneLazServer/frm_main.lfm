@@ -14,7 +14,7 @@ object frmMain: TfrmMain
   OnClose = FormClose
   OnCreate = FormCreate
   OnDestroy = FormDestroy
-  Position = poScreenCenter
+  Position = poDesktopCenter
   object pageMain: TPageControl
     Left = 0
     Height = 517
@@ -617,7 +617,7 @@ object frmMain: TfrmMain
       end
     end
     object tabLog: TTabSheet
-      Caption = '日志管理'
+      Caption = '日记管理'
       ClientHeight = 489
       ClientWidth = 878
       ImageIndex = 2
@@ -1552,12 +1552,12 @@ object frmMain: TfrmMain
   object dsZTSet: TDataSource
     DataSet = qryZTSet
     Left = 16
-    Top = 536
+    Top = 488
   end
   object dsZTPool: TDataSource
     DataSet = qryZTPool
     Left = 48
-    Top = 536
+    Top = 488
   end
   object TrayIcon1: TTrayIcon
     BalloonFlags = bfInfo
@@ -5752,7 +5752,7 @@ object frmMain: TfrmMain
   object dsVirtual: TDataSource
     DataSet = qryVirtual
     Left = 80
-    Top = 536
+    Top = 488
   end
   object dsRouter: TDataSource
     DataSet = qryRouter
@@ -5796,8 +5796,8 @@ object frmMain: TfrmMain
   end
   object qryZTSet: TBufDataset
     FieldDefs = <>
-    Left = 16
-    Top = 488
+    Left = 8
+    Top = 432
     object qryZTSetFZTCode: TWideStringField
       FieldKind = fkData
       FieldName = 'FZTCode'
@@ -5985,8 +5985,8 @@ object frmMain: TfrmMain
   end
   object qryZTPool: TBufDataset
     FieldDefs = <>
-    Left = 56
-    Top = 488
+    Left = 48
+    Top = 432
     object qryZTPoolFZTCode: TWideStringField
       FieldKind = fkData
       FieldName = 'FZTCode'
@@ -6046,8 +6046,8 @@ object frmMain: TfrmMain
   end
   object qryVirtual: TBufDataset
     FieldDefs = <>
-    Left = 88
-    Top = 488
+    Left = 80
+    Top = 432
     object qryVirtualFVirtualCode: TWideStringField
       FieldKind = fkData
       FieldName = 'FVirtualCode'

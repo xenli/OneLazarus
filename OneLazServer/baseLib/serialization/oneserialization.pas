@@ -435,6 +435,7 @@ var
   lObjList: TObjectList;
   i, iArr: integer;
   tempStr: string;
+
 begin
   Result := False;
   if QSource = nil then
@@ -582,17 +583,22 @@ begin
       for i := 0 to length(LRttiProps) - 1 do
       begin
         LRttiProp := LRttiProps[i];
+
         if not LRttiProp.IsWritable then
           continue;
         if not (LRttiProp.Visibility in [mvPublic, mvPublished]) then
           continue;
+
+        tempJsonData := lJsonObj.Find(LRttiProp.Name);
+        if tempJsonData = nil then
+        begin
+          continue;
+        end;
+
         LPropRttiType := LRttiProp.PropertyType;
         case LPropRttiType.TypeKind of
           TTypeKind.tkClass:
           begin
-            tempJsonData := lJsonObj.Find(LRttiProp.Name);
-            if tempJsonData = nil then
-              continue;
             LPropValue := LRttiProp.GetValue(QSource);
             tempObj := LPropValue.AsObject;
             if tempObj = nil then
@@ -613,7 +619,17 @@ begin
           end;
           tkInteger:
           begin
-            LRttiProp.SetValue(QSource, lJsonObj.Get(LRttiProp.Name, DefalutInteger));
+            case tempJsonData.JSONType of
+              jtNumber:
+              begin
+                LRttiProp.SetValue(QSource, lJsonObj.Get(LRttiProp.Name, DefalutInteger));
+              end;
+              else
+              begin
+                QErrMsg := '对象属性['+LRttiProp.Name+']是整型,但Json数据非整型,无法转化数据';
+                exit;
+              end
+            end;
           end;
           tkInt64:
           begin
