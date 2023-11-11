@@ -1,0 +1,868 @@
+SEARCH_DIR("D:\devTool\myLazarus\lazarus\components\mORMot2-master\static\x86_64-win64\")
+SEARCH_DIR(".\httpServer\")
+SEARCH_DIR(".\baseLib\logger\")
+SEARCH_DIR(".\baseLib\thread\")
+SEARCH_DIR(".\baseLib\func\")
+SEARCH_DIR(".\baseLib\attribute\")
+SEARCH_DIR(".\baseLib\crypto\")
+SEARCH_DIR(".\baseLib\virtualFile\")
+SEARCH_DIR(".\baseLib\token\")
+SEARCH_DIR(".\baseLib\rtti\")
+SEARCH_DIR(".\dbCenter\")
+SEARCH_DIR(".\baseLib\serialization\")
+SEARCH_DIR("D:\devTool\myLazarus\lazarus\components\lazreport\source\addons\ZeosDB\lib\x86_64-win64\")
+SEARCH_DIR("D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\")
+SEARCH_DIR("D:\devTool\myLazarus\lazarus\components\lazreport\source\lib\x86_64-win64\")
+SEARCH_DIR("D:\devTool\myLazarus\lazarus\components\printers\lib\x86_64-win64\win32\")
+SEARCH_DIR("D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\")
+SEARCH_DIR("D:\devTool\myLazarus\lazarus\components\synedit\units\x86_64-win64\win32\")
+SEARCH_DIR("D:\devTool\myLazarus\lazarus\components\lazcontrols\lib\x86_64-win64\win32\")
+SEARCH_DIR("D:\devTool\myLazarus\lazarus\components\cairocanvas\lib\x86_64-win64\win32\")
+SEARCH_DIR("D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\")
+SEARCH_DIR("D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\")
+SEARCH_DIR("D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\")
+SEARCH_DIR("D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zplain\x86_64-win64\")
+SEARCH_DIR("D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zparsesql\x86_64-win64\")
+SEARCH_DIR("D:\devTool\myLazarus\lazarus\components\freetype\lib\x86_64-win64\")
+SEARCH_DIR("D:\devTool\myLazarus\lazarus\components\buildintf\units\x86_64-win64\")
+SEARCH_DIR("D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\")
+SEARCH_DIR("D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\")
+SEARCH_DIR("D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\")
+SEARCH_DIR("D:\devTool\myLazarus\lazarus\packager\units\x86_64-win64\")
+SEARCH_DIR(".\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\httpd22\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\zlib\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\winunits-jedi\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\winunits-base\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\webidl\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\wasmtime\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\vcl-compat\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\utils-pas2js\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\unzip\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\tplylib\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\tcl\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\symbolic\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\sqlite\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\sdl\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl-unicode\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl-objpas\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl-generics\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl-extra\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl-console\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\rsvg\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\regexpr\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\ptc\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\postgres\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\paszlib\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\pastojs\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\oracle\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\openssl\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\opengles\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\opengl\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\opencl\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\openal\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\odbc\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\odata\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\nvapi\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\numlib\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\mysql\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\mad\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\libvlc\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\libusb\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\libtar\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\libmicrohttpd\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\libgd\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\libffi\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\libenet\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\libcurl\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\jni\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\imagemagick\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\ibase\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\httpd24\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\hermes\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\hash\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\gtk2\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\gtk1\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\gst\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\graph\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\googleapi\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\gnutls\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\gitlab\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\gdbint\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fv\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fppkg\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fpmkunit\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fpindexer\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fpgtk\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fftw\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-xml\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-web\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-stl\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-sound\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-sdo\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-res\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-report\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-registry\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-process\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-pdf\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-passrc\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-net\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-mustache\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-json\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-js\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-hash\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-fpcunit\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-extra\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-css\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-base\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\fastcgi\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\dblib\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\chm\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\cdrom\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\cairo\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\bzip2\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\units\x86_64-win64\")
+SEARCH_DIR("D:\devTool\myLazarus\fpc\bin\x86_64-win64\")
+INPUT(
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\sysinit.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\OneServer.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\OneServer.obj
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\system.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\lnfodwrf.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\exeinfo.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\strings.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\windows.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\objpas.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\fpintres.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\interfaces.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\forms.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\zcomponent.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\frm_main.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\oneilog.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\onelog.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\onethread.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\onefilehelper.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\oneattribute.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\onecrypto.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\onesqlcrypto.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\onestreamstring.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\onedatetimehelper.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\oneguid.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\onevirtualfile.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\onetokenmanage.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\onerttihelper.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\onedatainfo.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\oneztmanage.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\onemonitor.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\onecontrollerresult.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\onehttpconst.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\onehttpcontrollerrtti.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\onehttproutermanage.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\onehttpctxtresult.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\onestopwatch.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\oneglobal.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\oneormrtti.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\oneorm.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\oneserialization.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\onehttpcontroller.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\lazutf8.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\interfacebase.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\fpcadds.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\classes.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\sysutils.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl-objpas\strutils.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\rtlconsts.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\types.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\sortbase.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\typinfo.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\sysconst.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\windirs.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\math.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-base\gettext.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\fpimage.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\lclproc.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\lcltype.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\lmessages.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\lclplatformdef.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\intfgraphics.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\themes.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\integerlist.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\lazutilities.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\lazloggerbase.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\graphtype.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\graphmath.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\laz_avl_tree.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\lazfileutils.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\lazmethodlist.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\laztracer.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\lclstrconsts.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\lazutilsstrconsts.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\winunits-base\shlobj.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\winunits-base\activex.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\winunits-base\shellapi.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\winunits-base\commctrl.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl-objpas\variants.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\ctypes.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl-objpas\varutils.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\lazclasses.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl-objpas\system.uitypes.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\messages.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\fpreadbmp.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\fpwritebmp.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\bmpcomn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\fpreadpng.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\fpwritepng.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\fpreadtiff.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\fpwritetiff.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\fptiffcmn.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\lclversion.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\icnstypes.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\fpimgcmn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\pngcomn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\paszlib\zstream.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\paszlib\zbase.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\paszlib\gzio.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\dos.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\hash\crc.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\paszlib\zdeflate.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\paszlib\zinflate.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\paszlib\trees.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\paszlib\adler.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\paszlib\infblock.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\paszlib\infutil.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\paszlib\infcodes.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\paszlib\inftrees.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\paszlib\inffast.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\lazversion.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\graphics.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\lclintf.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-base\contnrs.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\fpcanvas.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\fpreadpnm.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\fpwritepnm.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\fpreadjpeg.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\fpwritejpeg.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\fpreadgif.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\lresources.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\lclrescache.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\wsreferences.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\clipping.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jpeglib.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jdapimin.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jdatasrc.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jdapistd.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jmorecfg.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jdeferr.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jinclude.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jerror.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jmemmgr.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jdmarker.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jdinput.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jcomapi.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jutils.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jmemnobs.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jdmaster.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jdcolor.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jdsample.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jdpostct.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jddctmgr.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jdphuff.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jdhuff.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jdcoefct.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jdmainct.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jquant1.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jquant2.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jdmerge.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jdct.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jidctfst.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jidctint.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jidctflt.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jidctred.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jcapistd.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jcapimin.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jdatadst.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jcparam.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jcinit.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jcmarker.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jcphuff.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jchuff.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jcmaster.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jccolor.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jcsample.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jcprepct.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jcdctmgr.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jccoefct.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jcmainct.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jfdctint.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jfdctfst.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\pasjpeg\jfdctflt.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\lazconfigstorage.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\dynqueue.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\avglvltree.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\lazdbglog.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-base\syncobjs.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\lazutf16.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\fileutil.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\utf8process.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\lazsysutils.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\maps.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\tmschema.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\fgl.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\masks.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-process\process.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-process\pipes.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\win32int.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\winunits-base\multimon.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\winunits-base\uxtheme.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\character.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\controls.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\buttons.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\dialogs.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\stdctrls.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\menus.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\comctrls.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\win32def.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\spin.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\translations.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\unicodedata.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\imglist.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\propertystorage.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\actnlist.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\lclclasses.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\fpimgcanv.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\fppixlcanv.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\pixtools.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-image\ellipses.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\wslclclasses.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\wsimglist.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\wsproc.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\wsfactory.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-base\rttiutils.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\wsmenus.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\lazlogger.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\lazstringutils.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-base\custapp.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\customtimer.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\clipbrd.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\helpintfs.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-base\singleinstance.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\chm\fasthtmlparser.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\wscontrols.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\wsforms.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\imagelistcache.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\textstrings.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\extendedstrings.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\wsstdctrls.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\wsbuttons.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\buttonpanel.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\extctrls.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\lcltaskdialog.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\dialogres.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\uitypes.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\popupnotifier.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\wsextctrls.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\wsdialogs.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\toolwin.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\wscomctrls.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\wstoolwin.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\wsspin.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-json\jsonscanner.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-json\jsonparser.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-json\fpjson.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\lconvencoding.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\stringhashlist.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-json\jsonreader.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\codepagescommon.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\codepagesasian.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\win32proc.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\win32wsfactory.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\win32wscontrols.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\win32wsbuttons.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\win32wsmenus.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\win32wsstdctrls.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\win32wsdialogs.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\win32themes.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\win32extra.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\lclmessageglue.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\calendar.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\extdlgs.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\checklst.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\grids.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\shellctrls.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\wscalendar.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\calcform.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\wsextdlgs.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\wschecklst.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-xml\htmldefs.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\maskedit.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\dynamicarray.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\laz2_xmlcfg.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\lcsvutils.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\winunits-base\imm.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\lazfilecache.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\laz2_dom.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\laz2_xmlread.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\laz2_xmlwrite.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\laz2_xmlutils.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-base\uriparser.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\wsgrids.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\wsshellctrls.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\win32wscalendar.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\win32wschecklst.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\win32wscomctrls.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\win32wsextctrls.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\win32wsextdlgs.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\win32wsforms.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\win32wsgrids.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\win32wsimglist.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\win32wsshellctrls.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\win32wsspin.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\winunits-base\commdlg.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZComponentReg.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZConnection.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZDatasetUtils.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZUpdateSqlEditor.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZConnectionGroup.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZGroupedConnection.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZIBEventAlerter.o
+D:\devTool\myLazarus\lazarus\packager\units\x86_64-win64\lazaruspackageintf.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZPropertyEditor.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\propedits.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\componenteditors.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZAbstractConnection.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZDataset.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZSqlUpdate.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZSqlProcessor.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZStoredProcedure.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZSqlMonitor.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZSqlMetadata.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZSequence.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZPgEventAlerter.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\ZClasses.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\ZCompatibility.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcIntfs.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\ZURL.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\ZMessages.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\ZCollections.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\ZTokenizer.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zparsesql\x86_64-win64\ZSelectSchema.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zparsesql\x86_64-win64\ZGenericSqlAnalyser.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcLogging.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\ZVariant.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zplain\x86_64-win64\ZPlainDriver.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\ZFastCode.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\ZSysUtils.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl-objpas\dateutils.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcUtils.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcResultSetMetadata.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\ZEncoding.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zplain\x86_64-win64\ZPlainLoader.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\dynlibs.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcResultSet.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcMetadata.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zparsesql\x86_64-win64\ZGenericSqlToken.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcCachedResultSet.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcCache.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcConnection.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcGenericResolver.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcAdo.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcDbLib.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcMySql.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcPostgreSql.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcInterbase6.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcSqLite.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcOracle.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcASA.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcPooled.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\db.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zplain\x86_64-win64\ZPlainAdoDriver.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zplain\x86_64-win64\ZPlainAdo.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\winunits-base\comobj.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\winunits-base\comconst.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\winunits-base\ole2.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-registry\registry.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-base\inifiles.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zplain\x86_64-win64\ZOleDB.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zparsesql\x86_64-win64\ZAdoToken.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcAdoStatement.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcAdoMetadata.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcAdoUtils.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcStatement.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcAdoResultSet.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zplain\x86_64-win64\ZPlainDbLibDriver.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zplain\x86_64-win64\ZPlainDbLibConstants.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcDbLibStatement.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcDbLibMetadata.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zparsesql\x86_64-win64\ZSybaseToken.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zparsesql\x86_64-win64\ZSybaseAnalyser.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcDbLibUtils.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcDbLibResultSet.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zplain\x86_64-win64\ZPlainMySqlDriver.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zplain\x86_64-win64\ZPlainMySqlConstants.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcMySqlStatement.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zparsesql\x86_64-win64\ZMySqlToken.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcMySqlUtils.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcMySqlMetadata.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zparsesql\x86_64-win64\ZMySqlAnalyser.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcMySqlResultSet.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zplain\x86_64-win64\ZPlainPostgreSqlDriver.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcPostgreSqlStatement.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcPostgreSqlUtils.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcPostgreSqlMetadata.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zparsesql\x86_64-win64\ZPostgreSqlToken.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zparsesql\x86_64-win64\ZPostgreSqlAnalyser.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcPostgreSqlResultSet.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zplain\x86_64-win64\ZPlainFirebirdDriver.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zplain\x86_64-win64\ZPlainFirebirdInterbaseConstants.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcInterbase6Utils.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcInterbase6ResultSet.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcInterbase6Statement.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcInterbase6Metadata.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zparsesql\x86_64-win64\ZInterbaseToken.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zparsesql\x86_64-win64\ZInterbaseAnalyser.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zplain\x86_64-win64\ZPlainSqLiteDriver.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcSqLiteStatement.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zparsesql\x86_64-win64\ZSqLiteToken.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcSqLiteUtils.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcSqLiteMetadata.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zparsesql\x86_64-win64\ZSqLiteAnalyser.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcSqLiteResultSet.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\ZMatchPattern.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zplain\x86_64-win64\ZPlainOracleDriver.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zplain\x86_64-win64\ZPlainOracleConstants.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcOracleStatement.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcOracleUtils.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcOracleMetadata.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zparsesql\x86_64-win64\ZOracleToken.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zparsesql\x86_64-win64\ZOracleAnalyser.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcOracleResultSet.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zplain\x86_64-win64\ZPlainASADriver.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zplain\x86_64-win64\ZPlainASAConstants.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcASAMetadata.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcASAStatement.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcASAUtils.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zdbc\x86_64-win64\ZDbcASAResultSet.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl-objpas\fmtbcd.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-base\maskutils.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\dbconst.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZAbstractRODataset.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZAbstractDataset.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZSqlStrings.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\ZExpression.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\ZExprParser.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\ZExprToken.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\ZVariables.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\ZFunctions.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\ZFunctionsMath.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\ZFunctionsDateTime.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\ZFunctionsStrings.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\ZFunctionsConvert.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcore\x86_64-win64\ZFunctionsOther.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZStreamBlob.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zparsesql\x86_64-win64\ZScriptParser.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\editbtn.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\valedit.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\filectrl.o
+D:\devTool\myLazarus\lazarus\components\lazcontrols\lib\x86_64-win64\win32\checkboxthemed.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\objinspstrconsts.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\propeditutils.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\frmselectprops.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\stringspropeditdlg.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\keyvalpropeditdlg.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\collectionpropeditform.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\filefilterpropeditor.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\pagespropeditdlg.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\idewindowintf.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\groupededit.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\calendarpopup.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\timepopup.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\ideimagesintf.o
+D:\devTool\myLazarus\lazarus\components\buildintf\units\x86_64-win64\ideoptionsintf.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\lazideintf.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\lazhelphtml.o
+D:\devTool\myLazarus\lazarus\components\buildintf\units\x86_64-win64\baseideintf.o
+D:\devTool\myLazarus\lazarus\components\buildintf\units\x86_64-win64\compoptsintf.o
+D:\devTool\myLazarus\lazarus\components\buildintf\units\x86_64-win64\projectintf.o
+D:\devTool\myLazarus\lazarus\components\buildintf\units\x86_64-win64\ideexterntoolintf.o
+D:\devTool\myLazarus\lazarus\components\buildintf\units\x86_64-win64\packageintf.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\ideopteditorintf.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\srceditorintf.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\lazhelpintf.o
+D:\devTool\myLazarus\lazarus\components\buildintf\units\x86_64-win64\macrointf.o
+D:\devTool\myLazarus\lazarus\components\buildintf\units\x86_64-win64\macrodefintf.o
+D:\devTool\myLazarus\lazarus\components\buildintf\units\x86_64-win64\newitemintf.o
+D:\devTool\myLazarus\lazarus\components\buildintf\units\x86_64-win64\projpackintf.o
+D:\devTool\myLazarus\lazarus\components\buildintf\units\x86_64-win64\buildstrconsts.o
+D:\devTool\myLazarus\lazarus\components\buildintf\units\x86_64-win64\packagedependencyintf.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\editorsyntaxhighlighterdef.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\idecommands.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\texttools.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\formeditingintf.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\objectinspector.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\idedialogs.o
+D:\devTool\myLazarus\lazarus\components\buildintf\units\x86_64-win64\lazmsgworker.o
+D:\devTool\myLazarus\lazarus\components\lazutils\lib\x86_64-win64\compwriterpas.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\unitresources.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\lazstringgridedit.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\checklistboxeditordlg.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\checkgroupeditordlg.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\componentreg.o
+D:\devTool\myLazarus\lazarus\components\lazcontrols\lib\x86_64-win64\win32\treefilteredit.o
+D:\devTool\myLazarus\lazarus\components\lazcontrols\lib\x86_64-win64\win32\listfilteredit.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\idehelpintf.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\componenttreeview.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\oifavoriteproperties.o
+D:\devTool\myLazarus\lazarus\components\ideintf\units\x86_64-win64\win32\changeparentdlg.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\lclmemmanager.o
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zcomponent\x86_64-win64\ZAbstractTable.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl-generics\generics.collections.o
+D:\devTool\myLazarus\projects\OneLaz\OneServer\lib\x86_64-win64\onehttpserver.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\bufdataset.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\sqldb.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\ibconnection.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\sqlite3conn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\pqconnection.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\oracleconnection.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\odbcconn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\mysql40conn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\mysql41conn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\mysql50conn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\mysql51conn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\mysql55conn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\mysql56conn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\mysql57conn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\mysql80conn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\mssqlconn.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\dbctrls.o
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\dbgrids.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl-generics\generics.memoryexpanders.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl-generics\generics.defaults.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl-generics\generics.helpers.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl-generics\generics.strings.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl-generics\generics.hashes.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\cpu.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.core.base.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.core.os.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.net.server.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.net.async.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.net.http.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.core.data.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.core.threads.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.core.unicode.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.core.text.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.core.buffers.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.core.rtti.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.core.datetime.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.core.zip.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.net.sock.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.lib.winhttp.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.net.client.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.crypt.secure.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.core.variants.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.core.json.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.core.log.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.core.perf.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.lib.static.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.lib.z.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\static\x86_64-win64\..\..\static\x86_64-win64\inffast.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\static\x86_64-win64\..\..\static\x86_64-win64\inftrees.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\static\x86_64-win64\..\..\static\x86_64-win64\inflate.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\static\x86_64-win64\..\..\static\x86_64-win64\deflate.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\static\x86_64-win64\..\..\static\x86_64-win64\trees.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\static\x86_64-win64\..\..\static\x86_64-win64\zutil.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\static\x86_64-win64\..\..\static\x86_64-win64\adler32.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\static\x86_64-win64\..\..\static\x86_64-win64\crc32.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.lib.sspi.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\winunits-base\wininet.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.lib.gssapi.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\mormot.crypt.core.o
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\static\x86_64-win64\..\..\static\delphi\sha512-x64sse4.obj
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\static\x86_64-win64\..\..\static\delphi\crc32c64.obj
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\bufdataset_parser.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\dbf_prscore.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\dbf_prsdef.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\dbf_prssupp.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\sqlscript.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\sqltypes.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\ibase\ibase60dyn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\sqlite\sqlite3dyn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\postgres\postgres3dyn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\postgres\dllistdyn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\oracle\ocidyn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\oracle\oratypes.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\odbc\odbcsqldyn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\mysql\mysql40dyn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\mysql\mysql41dyn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\mysql\mysql50dyn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\mysql\mysql51dyn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\mysql\mysql55dyn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\mysql\mysql56dyn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\mysql\mysql57dyn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\mysql\mysql80dyn.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\dblib\dblib.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl-objpas\rtti.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\paszlib\zip.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\paszlib\zipper.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\sqldblib.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\paszlib\ziputils.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-base\base64.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-db\memds.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\hash\md5.o
+D:\devTool\myLazarus\fpc\units\x86_64-win64\fcl-web\httpprotocol.o
+)
+GROUP(
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\libimpsysinit.a
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\libimpsystem.a
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\libimpwindows.a
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\libimpfpintres.a
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\libimpsysutils.a
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\libimpwindirs.a
+D:\devTool\myLazarus\fpc\units\x86_64-win64\winunits-base\libimpshlobj.a
+D:\devTool\myLazarus\fpc\units\x86_64-win64\winunits-base\libimpactivex.a
+D:\devTool\myLazarus\fpc\units\x86_64-win64\winunits-base\libimpshellapi.a
+D:\devTool\myLazarus\fpc\units\x86_64-win64\winunits-base\libimpcommctrl.a
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl-objpas\libimpvarutils.a
+D:\devTool\myLazarus\fpc\units\x86_64-win64\rtl\libimpdos.a
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\libimplclintf.a
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\libimpwin32int.a
+D:\devTool\myLazarus\lazarus\lcl\units\x86_64-win64\win32\libimpwin32extra.a
+D:\devTool\myLazarus\fpc\units\x86_64-win64\winunits-base\libimpimm.a
+D:\devTool\myLazarus\fpc\units\x86_64-win64\winunits-base\libimpcommdlg.a
+D:\devTool\myLazarus\config_lazarus\onlinepackagemanager\packages\zeosdbo\packages\lazarus\lib\zplain\x86_64-win64\libimpZOleDB.a
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\libimpmormot.core.os.a
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\libimpmormot.net.sock.a
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\static\x86_64-win64\libkernel32.a
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\libimpmormot.lib.static.a
+D:\devTool\myLazarus\lazarus\components\mORMot2-master\packages\lazarus\lib\x86_64-win64\libimpmormot.lib.sspi.a
+D:\devTool\myLazarus\fpc\units\x86_64-win64\winunits-base\libimpwininet.a
+)
+SEARCH_DIR("/usr/i686-pc-cygwin/lib"); SEARCH_DIR("/usr/lib"); SEARCH_DIR("/usr/lib/w32api");
+OUTPUT_FORMAT(pei-x86-64)
+ENTRY(_mainCRTStartup)
+SECTIONS
+{
+  . = SIZEOF_HEADERS;
+  . = ALIGN(__section_alignment__);
+  .text  __image_base__ + ( __section_alignment__ < 0x1000 ? . : __section_alignment__ ) :
+  {
+    __text_start__ = . ;
+    *(.init)
+    *(.text .stub .text.* .gnu.linkonce.t.*)
+    *(SORT(.text$*))
+    *(.glue_7t)
+    *(.glue_7)
+    . = ALIGN(8);
+     ___CTOR_LIST__ = .; __CTOR_LIST__ = . ;
+    LONG (-1);
+    LONG (-1);
+    *(.ctors); *(.ctor); *(SORT(.ctors.*));  LONG (0);
+    LONG (0);
+     ___DTOR_LIST__ = .; __DTOR_LIST__ = . ;
+    LONG (-1);
+    LONG (-1);
+    *(.dtors); *(.dtor); *(SORT(.dtors.*));  LONG (0);
+    LONG (0);
+     *(.fini)
+    PROVIDE (etext = .);
+    *(.gcc_except_table)
+  }
+  .data BLOCK(__section_alignment__) :
+  {
+    __data_start__ = . ;
+    *(.data .data.* .gnu.linkonce.d.* .fpc*)
+    *(.data2)
+    *(SORT(.data$*))
+    *(.jcr)
+    PROVIDE (_tls_index = .);
+    LONG (0);
+    __data_end__ = . ;
+    *(.data_cygwin_nocopy)
+  }
+  .rdata BLOCK(__section_alignment__) :
+  {
+    *(.rdata)
+    *(.rdata.*)
+    *(.rodata .rodata.* .gnu.linkonce.r.*)
+    *(SORT(.rdata$*))
+    *(.eh_frame)
+    ___RUNTIME_PSEUDO_RELOC_LIST__ = .;
+    __RUNTIME_PSEUDO_RELOC_LIST__ = .;
+    *(.rdata_runtime_pseudo_reloc)
+    ___RUNTIME_PSEUDO_RELOC_LIST_END__ = .;
+    __RUNTIME_PSEUDO_RELOC_LIST_END__ = .;
+  }
+  .pdata BLOCK(__section_alignment__) : { *(.pdata) }
+  .bss BLOCK(__section_alignment__) :
+  {
+    __bss_start__ = . ;
+    *(.bss .bss.* .gnu.linkonce.b.*)
+    *(SORT(.bss$*))
+    *(COMMON)
+    __bss_end__ = . ;
+  }
+  .edata BLOCK(__section_alignment__) : { *(.edata) }
+  .idata BLOCK(__section_alignment__) :
+  {
+    SORT(*)(.idata$2)
+    SORT(*)(.idata$3)
+    /* These zeroes mark the end of the import list.  */
+    LONG (0); LONG (0); LONG (0); LONG (0); LONG (0);
+    SORT(*)(.idata$4)
+    SORT(*)(.idata$5)
+    SORT(*)(.idata$6)
+    SORT(*)(.idata$7)
+  }
+  .CRT BLOCK(__section_alignment__) :
+  {
+    ___crt_xc_start__ = . ;
+    *(SORT(.CRT$XC*))  /* C initialization */
+    ___crt_xc_end__ = . ;
+    ___crt_xi_start__ = . ;
+    *(SORT(.CRT$XI*))  /* C++ initialization */
+    ___crt_xi_end__ = . ;
+    ___crt_xl_start__ = . ;
+    *(SORT(.CRT$XL*))  /* TLS callbacks */
+    /* ___crt_xl_end__ is defined in the TLS Directory support code */
+    PROVIDE (___crt_xl_end__ = .);
+    ___crt_xp_start__ = . ;
+    *(SORT(.CRT$XP*))  /* Pre-termination */
+    ___crt_xp_end__ = . ;
+    ___crt_xt_start__ = . ;
+    *(SORT(.CRT$XT*))  /* Termination */
+    ___crt_xt_end__ = . ;
+  }
+  .tls BLOCK(__section_alignment__) :
+  {
+    ___tls_start__ = . ;
+    *(.tls .tls.*)
+    *(.tls$)
+    *(SORT(.tls$*))
+    ___tls_end__ = . ;
+  }
+  .rsrc BLOCK(__section_alignment__) :
+  {
+    *(.rsrc)
+    *(SORT(.rsrc$*))
+  }
+  .reloc BLOCK(__section_alignment__) : { *(.reloc) }
+  .stab BLOCK(__section_alignment__) (NOLOAD) : { *(.stab) }
+  .stabstr BLOCK(__section_alignment__) (NOLOAD) : { *(.stabstr) }
+  .debug_aranges BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_aranges) }
+  .debug_pubnames BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_pubnames) }
+  .debug_info BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_info) *(.gnu.linkonce.wi.*) }
+  .debug_abbrev BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_abbrev) }
+  .debug_line BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_line) }
+  .debug_frame BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_frame) }
+  .debug_str BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_str) }
+  .debug_loc BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_loc) }
+  .debug_macinfo BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_macinfo) }
+  .debug_weaknames BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_weaknames) }
+  .debug_funcnames BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_funcnames) }
+  .debug_typenames BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_typenames) }
+  .debug_varnames BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_varnames) }
+  .debug_ranges BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_ranges) }
+}
