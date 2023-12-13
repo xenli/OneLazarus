@@ -1,0 +1,7 @@
+inherited frmWait: TfrmWait
+  Height = 192
+  Width = 243
+  BorderStyle = bsNone
+  Caption = '等待窗体'
+  OnClose = FormClose
+end

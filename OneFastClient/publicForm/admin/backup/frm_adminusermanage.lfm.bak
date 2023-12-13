@@ -1,0 +1,475 @@
+inherited frmAdminUserManage: TfrmAdminUserManage
+  Height = 500
+  Width = 837
+  Caption = '用户管理'
+  ClientHeight = 500
+  ClientWidth = 837
+  OnClose = FormClose
+  OnCreate = FormCreate
+  inherited plTool: TPanel
+    Width = 837
+    ClientWidth = 837
+    ParentDoubleBuffered = False
+    inherited tbClose: TBitBtn
+      Left = 761
+    end
+    inherited tbNew: TBitBtn
+      Width = 110
+      Caption = '新建用户'
+      OnClick = tbNewClick
+    end
+    inherited tbEdit: TBitBtn
+      Left = 111
+      Width = 110
+      Caption = '编辑用户'
+      OnClick = tbEditClick
+    end
+    inherited tbSave: TBitBtn
+      Left = 721
+      Width = 20
+      Align = alRight
+      Visible = False
+    end
+    inherited tbRefresh: TBitBtn
+      Left = 221
+      OnClick = tbRefreshClick
+    end
+    inherited tbClose5: TBitBtn
+      Left = 741
+      Width = 20
+      Visible = False
+    end
+    inherited tbDel: TBitBtn
+      Left = 701
+      Width = 20
+      Align = alRight
+      Visible = False
+    end
+  end
+  inherited plDoubleBuffered: TPanel
+    Height = 470
+    Width = 837
+    ClientHeight = 470
+    ClientWidth = 837
+    object DBGrid1: TDBGrid[0]
+      Left = 312
+      Height = 470
+      Top = 0
+      Width = 525
+      Align = alClient
+      Color = clWindow
+      Columns = <      
+        item
+          ReadOnly = True
+          Title.Caption = '操作员代码'
+          Width = 100
+          FieldName = 'FAdminCode'
+        end      
+        item
+          Title.Caption = '操作员名称'
+          Width = 100
+          FieldName = 'FAdminName'
+        end      
+        item
+          ReadOnly = True
+          Title.Caption = '操作员电话'
+          Width = 100
+          FieldName = 'FAdminTel'
+        end      
+        item
+          ReadOnly = True
+          Title.Caption = '操作员类型'
+          Width = 80
+          FieldName = 'FAdminType'
+        end      
+        item
+          ReadOnly = True
+          Title.Caption = '启用'
+          FieldName = 'FIsEnable'
+        end      
+        item
+          ReadOnly = True
+          Title.Caption = '时间限制'
+          FieldName = 'FIsLimit'
+        end      
+        item
+          ReadOnly = True
+          Title.Caption = '有效开始时间'
+          Width = 100
+          FieldName = 'FLimtStartTime'
+        end      
+        item
+          ReadOnly = True
+          Title.Caption = '有效结束时间'
+          Width = 100
+          FieldName = 'FLimtEndTime'
+        end      
+        item
+          ReadOnly = True
+          Title.Caption = '备注'
+          Width = 100
+          FieldName = 'FRemark'
+        end      
+        item
+          ReadOnly = True
+          Title.Caption = '创建时间'
+          Width = 100
+          FieldName = 'FCreateTime'
+        end      
+        item
+          ReadOnly = True
+          Title.Caption = '多点登陆'
+          Width = 60
+          FieldName = 'FIsMultiLogin'
+        end>
+      DataSource = dsAdmin
+      TabOrder = 0
+      OnDblClick = DBGrid1DblClick
+    end
+    object TreeGroup: TLazVirtualStringTree[1]
+      Left = 0
+      Height = 470
+      Top = 0
+      Width = 312
+      Align = alLeft
+      DefaultNodeHeight = 20
+      DefaultText = 'Node'
+      Header.AutoSizeIndex = 0
+      Header.Columns = <      
+        item
+          Options = [coAllowClick, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAllowFocus]
+          Position = 0
+          Text = '节点代码'
+          Width = 100
+        end      
+        item
+          Options = [coAllowClick, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAllowFocus]
+          Position = 1
+          Text = '架构名称'
+          Width = 200
+        end>
+      Header.Options = [hoColumnResize, hoDrag, hoShowSortGlyphs, hoVisible]
+      TabOrder = 1
+      TreeOptions.MiscOptions = [toAcceptOLEDrop, toFullRepaintOnResize, toInitOnSave, toWheelPanning, toEditOnClick]
+      OnGetText = TreeGroupGetText
+      OnNodeDblClick = TreeGroupNodeDblClick
+    end
+  end
+  object qryAdmin: TOneDataSet[2]
+    FieldDefs = <>
+    SQL.Strings = (
+      'select'
+      '*'
+      'from v_onefast_admin_group'
+    )
+    DataInfo.IsDesignGetFields = False
+    DataInfo.OpenMode = openData
+    DataInfo.SaveMode = saveData
+    DataInfo.DataReturnMode = dataStream
+    DataInfo.PageSize = -1
+    DataInfo.PageIndex = 0
+    DataInfo.PageCount = 0
+    DataInfo.PageTotal = 0
+    DataInfo.AffectedMaxCount = 0
+    DataInfo.AffectedMustCount = 1
+    DataInfo.RowsAffected = 0
+    DataInfo.AsynMode = False
+    DataInfo.IsReturnData = False
+    DataInfo.TranSpanSec = 0
+    Params = <>
+    MultiIndex = 0
+    Left = 344
+    Top = 304
+    object qryAdminFAdminID: TStringField
+      DisplayLabel = '操作员ID'
+      FieldKind = fkData
+      FieldName = 'FAdminID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object qryAdminFAdminCode: TStringField
+      DisplayLabel = '操作员代码'
+      FieldKind = fkData
+      FieldName = 'FAdminCode'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryAdminFAdminName: TStringField
+      DisplayLabel = '操作员名称'
+      FieldKind = fkData
+      FieldName = 'FAdminName'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryAdminFAdminTel: TStringField
+      DisplayLabel = '操作员电话'
+      FieldKind = fkData
+      FieldName = 'FAdminTel'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryAdminFAdminType: TStringField
+      DisplayLabel = '操作员类型'
+      FieldKind = fkData
+      FieldName = 'FAdminType'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 10
+    end
+    object qryAdminFIsEnable: TBooleanField
+      DisplayLabel = '启用'
+      FieldKind = fkData
+      FieldName = 'FIsEnable'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryAdminFIsLimit: TBooleanField
+      DisplayLabel = '时间限制'
+      FieldKind = fkData
+      FieldName = 'FIsLimit'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryAdminFLimtStartTime: TDateTimeField
+      DisplayLabel = '有效开始时间'
+      FieldKind = fkData
+      FieldName = 'FLimtStartTime'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryAdminFLimtEndTime: TDateTimeField
+      DisplayLabel = '有效结束时间'
+      FieldKind = fkData
+      FieldName = 'FLimtEndTime'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryAdminFRemark: TStringField
+      DisplayLabel = '备注'
+      FieldKind = fkData
+      FieldName = 'FRemark'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object qryAdminFCreateTime: TDateTimeField
+      DisplayLabel = '创建时间'
+      FieldKind = fkData
+      FieldName = 'FCreateTime'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryAdminFIsMultiLogin: TBooleanField
+      DisplayLabel = '多点登陆'
+      FieldKind = fkData
+      FieldName = 'FIsMultiLogin'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryAdminFGroupID: TStringField
+      DisplayLabel = '架构ID'
+      FieldKind = fkData
+      FieldName = 'FGroupID'
+      Index = 12
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object qryAdminFGroupTreeCode: TStringField
+      DisplayLabel = '架构树形代码'
+      FieldKind = fkData
+      FieldName = 'FGroupTreeCode'
+      Index = 13
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryAdminFGroupCaption: TStringField
+      DisplayLabel = '架构名称'
+      FieldKind = fkData
+      FieldName = 'FGroupCaption'
+      Index = 14
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryAdminFRoleID: TStringField
+      DisplayLabel = '角色ID'
+      FieldKind = fkData
+      FieldName = 'FRoleID'
+      Index = 15
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object qryAdminFRoleCaption: TStringField
+      DisplayLabel = '角色名称'
+      FieldKind = fkData
+      FieldName = 'FRoleCaption'
+      Index = 16
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+  end
+  object dsAdmin: TDataSource[3]
+    DataSet = qryAdmin
+    Left = 416
+    Top = 304
+  end
+  object qryGroup: TOneDataSet[4]
+    FieldDefs = <>
+    SQL.Strings = (
+      'Select'
+      '*'
+      'from onefast_group'
+      'order by FGroupTreeCode asc '
+    )
+    DataInfo.IsDesignGetFields = False
+    DataInfo.TableName = 'onefast_group'
+    DataInfo.PrimaryKey = 'FGroupID'
+    DataInfo.OpenMode = openData
+    DataInfo.SaveMode = saveData
+    DataInfo.DataReturnMode = dataStream
+    DataInfo.PageSize = -1
+    DataInfo.PageIndex = 0
+    DataInfo.PageCount = 0
+    DataInfo.PageTotal = 0
+    DataInfo.AffectedMaxCount = 0
+    DataInfo.AffectedMustCount = 1
+    DataInfo.RowsAffected = 0
+    DataInfo.AsynMode = False
+    DataInfo.IsReturnData = False
+    DataInfo.TranSpanSec = 0
+    Params = <>
+    MultiIndex = 0
+    Left = 272
+    Top = 200
+    object qryGroupFGroupID: TStringField
+      FieldKind = fkData
+      FieldName = 'FGroupID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object qryGroupFPGroupID: TStringField
+      FieldKind = fkData
+      FieldName = 'FPGroupID'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object qryGroupFGroupCode: TStringField
+      FieldKind = fkData
+      FieldName = 'FGroupCode'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryGroupFGroupCaption: TStringField
+      FieldKind = fkData
+      FieldName = 'FGroupCaption'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryGroupFGroupType: TStringField
+      FieldKind = fkData
+      FieldName = 'FGroupType'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryGroupFGroupTreeCode: TStringField
+      FieldKind = fkData
+      FieldName = 'FGroupTreeCode'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryGroupFRemark: TStringField
+      FieldKind = fkData
+      FieldName = 'FRemark'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+  end
+  object dsGroup: TDataSource[5]
+    DataSet = qryGroup
+    Left = 336
+    Top = 200
+  end
+end

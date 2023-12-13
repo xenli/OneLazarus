@@ -1,0 +1,26 @@
+unit frmAdminCenter;
+
+{$mode ObjFPC}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, frm_BaseUI;
+
+type
+  TfrmBaseUI1 = class(TfrmBaseUI)
+  private
+
+  public
+
+  end;
+
+var
+  frmBaseUI1: TfrmBaseUI1;
+
+implementation
+
+{$R *.lfm}
+
+end.
+

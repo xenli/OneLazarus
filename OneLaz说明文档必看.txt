@@ -1,0 +1,44 @@
+OneServer-服务端
+OneClient-客户端控件包
+OneClientDemo-客户端控件包Demo
+OneFastClient-基于OneClient开发的客户端
+
+
+-------------更新说明-------------------------
+日期:2023-12-13
+服务端:
+	1.修正SaveDatas多个保存数据集的bug
+	2.增加FastApi功能
+客户端:
+	1.增加客户端 ClientDemoFastApi 配置界面
+
+**************2023-12-04************
+服务端:
+	1.增加了RTC中间件的支持
+                 修改 one.inc文件 默认 {$DEFINE ONEMORMOT}  改成 {$DEFINE ONERTC} 即可
+	 当然你修改了RTC在工程Project inspector 项目所需要的Required packages也要添加对应的RTC控件包
+	 当你启用 ONRRTC mormot2控件包就没用了
+
+                2.修正服务端控制层 TActionResult返回结果异常
+                3.其它优化
+
+
+日期:2023-12-08
+服务端:
+	1.账套交互超过10分钟没交互,在次交互，会断开在重连。
+	2.账套在LockZT时会判断是不是已连，未连重新连接
+
+客户端控件包:
+
+	1.修正TActionResultT改成TActionResult与服务端保持一至
+
+本次升级，请控件包也要一起升级，否则会出现客户端服务端交互不了
+
+
+**************2023-10-24************
+服务端
+	1.修正前端FormData文件上传 即Multipart上传功能
+	参考单元 \httpServer\controller\unidemocontroller.pas 
+                  // 文件上传
+                 function PostFile(QFormData: TOneMultipartDecode): TActionResultString;
+                2.修正序列化单元一些错误提示

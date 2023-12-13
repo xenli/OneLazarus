@@ -1,0 +1,13 @@
+object frmBaseUI: TfrmBaseUI
+  Left = 350
+  Height = 285
+  Top = 31
+  Width = 386
+  Caption = 'frmBaseUI'
+  Color = clWhite
+  DoubleBuffered = False
+  Font.Height = -15
+  OnCreate = FormCreate
+  ParentDoubleBuffered = False
+  Position = poMainFormCenter
+end

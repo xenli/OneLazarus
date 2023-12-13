@@ -1,0 +1,33 @@
+inherited frmStandMDI: TfrmStandMDI
+  Left = -8
+  Height = 478
+  Top = -8
+  Width = 762
+  BorderIcons = [biSystemMenu, biMinimize, biMaximize, biHelp]
+  BorderStyle = bsNone
+  Caption = 'MDI窗体基类'
+  ClientHeight = 478
+  ClientWidth = 762
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  inherited plTool: TPanel
+    Width = 762
+    ClientWidth = 762
+    inherited tbClose: TBitBtn
+      Left = 686
+    end
+    inherited tbClose5: TBitBtn
+      Left = 611
+    end
+  end
+  object plDoubleBuffered: TPanel[1]
+    Left = 0
+    Height = 448
+    Top = 30
+    Width = 762
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 1
+  end
+end

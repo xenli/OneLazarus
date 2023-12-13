@@ -1,0 +1,16 @@
+object dmClientServer: TdmClientServer
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Height = 252
+  HorizontalOffset = 391
+  VerticalOffset = 31
+  Width = 375
+  object OneConnection: TOneConnection
+    IsHttps = False
+    HTTPPort = 0
+    ConnectionTimeout = 0
+    ResponseTimeout = 0
+    Left = 136
+    Top = 80
+  end
+end

@@ -1,0 +1,171 @@
+inherited frmRolePick: TfrmRolePick
+  Width = 438
+  Caption = '角色选择'
+  ClientWidth = 438
+  OnCreate = FormCreate
+  inherited plTool: TPanel
+    Width = 438
+    ClientWidth = 438
+    inherited tbClose: TBitBtn
+      Left = 337
+      Width = 100
+      Visible = False
+    end
+    inherited tbNew: TBitBtn
+      Width = 100
+      OnClick = tbNewClick
+    end
+    inherited tbEdit: TBitBtn
+      Left = 257
+      Width = 20
+      Align = alRight
+      Visible = False
+    end
+    inherited tbSave: TBitBtn
+      Left = 277
+      Width = 20
+      Align = alRight
+      Visible = False
+    end
+    inherited tbRefresh: TBitBtn
+      Left = 101
+      Width = 100
+      OnClick = tbRefreshClick
+    end
+    inherited tbClose5: TBitBtn
+      Left = 317
+      Width = 20
+      Visible = False
+    end
+    inherited tbDel: TBitBtn
+      Left = 297
+      Width = 20
+      Align = alRight
+      Visible = False
+    end
+  end
+  object TreeRole: TLazVirtualStringTree[1]
+    Left = 0
+    Height = 392
+    Top = 30
+    Width = 438
+    Align = alClient
+    DefaultNodeHeight = 20
+    DefaultText = 'Node'
+    Header.AutoSizeIndex = 0
+    Header.Columns = <    
+      item
+        Options = [coAllowClick, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAllowFocus]
+        Position = 0
+        Text = '节点代码'
+        Width = 200
+      end    
+      item
+        Options = [coAllowClick, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAllowFocus]
+        Position = 1
+        Text = '角色名称'
+        Width = 200
+      end>
+    Header.Options = [hoColumnResize, hoDrag, hoShowSortGlyphs, hoVisible]
+    TabOrder = 1
+    OnGetText = TreeRoleGetText
+    OnNodeDblClick = TreeRoleNodeDblClick
+  end
+  object qryRole: TOneDataSet[2]
+    FieldDefs = <>
+    SQL.Strings = (
+      'select'
+      '*'
+      'from onefast_role'
+      'order by FRoleTreeCode asc '
+    )
+    DataInfo.IsDesignGetFields = False
+    DataInfo.TableName = 'onefast_role'
+    DataInfo.PrimaryKey = 'FRoleID'
+    DataInfo.OpenMode = openData
+    DataInfo.SaveMode = saveData
+    DataInfo.DataReturnMode = dataStream
+    DataInfo.PageSize = -1
+    DataInfo.PageIndex = 0
+    DataInfo.PageCount = 0
+    DataInfo.PageTotal = 0
+    DataInfo.AffectedMaxCount = 0
+    DataInfo.AffectedMustCount = 1
+    DataInfo.RowsAffected = 0
+    DataInfo.AsynMode = False
+    DataInfo.IsReturnData = False
+    DataInfo.TranSpanSec = 0
+    Params = <>
+    MultiIndex = 0
+    Left = 176
+    Top = 280
+    object qryRoleFRoleID: TStringField
+      FieldKind = fkData
+      FieldName = 'FRoleID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object qryRoleFPRoleID: TStringField
+      FieldKind = fkData
+      FieldName = 'FPRoleID'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object qryRoleFRoleCode: TStringField
+      DisplayLabel = '角色代码'
+      FieldKind = fkData
+      FieldName = 'FRoleCode'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryRoleFRoleCaption: TStringField
+      DisplayLabel = '角色名称'
+      FieldKind = fkData
+      FieldName = 'FRoleCaption'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryRoleFRoleTreeCode: TStringField
+      DisplayLabel = '节点代码'
+      FieldKind = fkData
+      FieldName = 'FRoleTreeCode'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryRoleFRemark: TStringField
+      FieldKind = fkData
+      FieldName = 'FRemark'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+  end
+  object dsRole: TDataSource[3]
+    DataSet = qryRole
+    Left = 224
+    Top = 280
+  end
+end

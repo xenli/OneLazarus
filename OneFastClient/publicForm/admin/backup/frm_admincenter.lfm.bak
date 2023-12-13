@@ -1,0 +1,79 @@
+inherited frmAdminCenter: TfrmAdminCenter
+  Caption = '管理员中心'
+  OnClose = FormClose
+  inherited plTool: TPanel
+    inherited tbNew: TBitBtn
+      Left = 76
+      Visible = False
+    end
+    inherited tbEdit: TBitBtn
+      Left = 151
+      Visible = False
+    end
+    inherited tbSave: TBitBtn
+      Left = 226
+      Visible = False
+    end
+    inherited tbRefresh: TBitBtn
+      Left = 1
+      Visible = False
+    end
+    inherited tbClose5: TBitBtn
+      Visible = False
+    end
+    inherited tbDel: TBitBtn
+      Left = 301
+      Visible = False
+    end
+  end
+  object Panel1: TPanel[1]
+    Left = 0
+    Height = 448
+    Top = 30
+    Width = 762
+    Align = alClient
+    Caption = 'Panel1'
+    ClientHeight = 448
+    ClientWidth = 762
+    TabOrder = 1
+    object tbGroupMange: TBitBtn
+      Left = 10
+      Height = 100
+      Top = 8
+      Width = 98
+      BorderSpacing.Top = 50
+      Caption = '组织结构'
+      Layout = blGlyphTop
+      Images = dmImg.img64
+      ImageIndex = 141
+      OnClick = tbGroupMangeClick
+      TabOrder = 0
+    end
+    object tbRoleManage: TBitBtn
+      Left = 122
+      Height = 100
+      Top = 8
+      Width = 98
+      BorderSpacing.Top = 50
+      Caption = '角色管理'
+      Layout = blGlyphTop
+      Images = dmImg.img64
+      ImageIndex = 136
+      OnClick = tbRoleManageClick
+      TabOrder = 1
+    end
+    object tbUserManage: TBitBtn
+      Left = 242
+      Height = 100
+      Top = 8
+      Width = 98
+      BorderSpacing.Top = 50
+      Caption = '用户管理'
+      Layout = blGlyphTop
+      Images = dmImg.img64
+      ImageIndex = 23
+      OnClick = tbUserManageClick
+      TabOrder = 2
+    end
+  end
+end

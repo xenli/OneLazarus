@@ -1,0 +1,336 @@
+object dmClientServer: TdmClientServer
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Height = 252
+  HorizontalOffset = 391
+  VerticalOffset = 31
+  Width = 375
+  object OneConnection: TOneConnection
+    IsHttps = False
+    HTTPPort = 0
+    ConnectionTimeout = 0
+    ResponseTimeout = 0
+    Left = 136
+    Top = 80
+  end
+  object SQLQuery1: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'FAdminID'
+        DataType = ftString
+        Precision = -1
+        Size = 32
+      end    
+      item
+        Name = 'FAdminCode'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'FAdminName'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'FAdminPass'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'FAdminTel'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'FAdminType'
+        DataType = ftString
+        Precision = -1
+        Size = 10
+      end    
+      item
+        Name = 'FIsEnable'
+        DataType = ftBoolean
+        Precision = -1
+      end    
+      item
+        Name = 'FIsLimit'
+        DataType = ftBoolean
+        Precision = -1
+      end    
+      item
+        Name = 'FLimtStartTime'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'FLimtEndTime'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'FRemark'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'FCreateTime'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'FIsMultiLogin'
+        DataType = ftBoolean
+        Precision = -1
+      end    
+      item
+        Name = 'FGroupID'
+        DataType = ftString
+        Precision = -1
+        Size = 32
+      end    
+      item
+        Name = 'FGroupTreeCode'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'FGroupCaption'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'FRoleID'
+        DataType = ftString
+        Precision = -1
+        Size = 32
+      end    
+      item
+        Name = 'FRoleCaption'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end>
+    Database = SQLConnector1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'select'
+      '*'
+      'from v_onefast_admin_group'
+      'where FAdminID=:FAdminID'
+      ''
+    )
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'FAdminID'
+        ParamType = ptInput
+      end>
+    Macros = <>
+    Left = 80
+    Top = 120
+    object SQLQuery1FAdminID: TStringField
+      FieldKind = fkData
+      FieldName = 'FAdminID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 32
+    end
+    object SQLQuery1FAdminCode: TStringField
+      FieldKind = fkData
+      FieldName = 'FAdminCode'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object SQLQuery1FAdminName: TStringField
+      FieldKind = fkData
+      FieldName = 'FAdminName'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object SQLQuery1FAdminPass: TStringField
+      FieldKind = fkData
+      FieldName = 'FAdminPass'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object SQLQuery1FAdminTel: TStringField
+      FieldKind = fkData
+      FieldName = 'FAdminTel'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery1FAdminType: TStringField
+      FieldKind = fkData
+      FieldName = 'FAdminType'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 10
+    end
+    object SQLQuery1FIsEnable: TBooleanField
+      FieldKind = fkData
+      FieldName = 'FIsEnable'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object SQLQuery1FIsLimit: TBooleanField
+      FieldKind = fkData
+      FieldName = 'FIsLimit'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object SQLQuery1FLimtStartTime: TDateTimeField
+      FieldKind = fkData
+      FieldName = 'FLimtStartTime'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery1FLimtEndTime: TDateTimeField
+      FieldKind = fkData
+      FieldName = 'FLimtEndTime'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery1FRemark: TStringField
+      FieldKind = fkData
+      FieldName = 'FRemark'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object SQLQuery1FCreateTime: TDateTimeField
+      FieldKind = fkData
+      FieldName = 'FCreateTime'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object SQLQuery1FIsMultiLogin: TBooleanField
+      FieldKind = fkData
+      FieldName = 'FIsMultiLogin'
+      Index = 12
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object SQLQuery1FGroupID: TStringField
+      FieldKind = fkData
+      FieldName = 'FGroupID'
+      Index = 13
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object SQLQuery1FGroupTreeCode: TStringField
+      FieldKind = fkData
+      FieldName = 'FGroupTreeCode'
+      Index = 14
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object SQLQuery1FGroupCaption: TStringField
+      FieldKind = fkData
+      FieldName = 'FGroupCaption'
+      Index = 15
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object SQLQuery1FRoleID: TStringField
+      FieldKind = fkData
+      FieldName = 'FRoleID'
+      Index = 16
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object SQLQuery1FRoleCaption: TStringField
+      FieldKind = fkData
+      FieldName = 'FRoleCaption'
+      Index = 17
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+  end
+  object SQLConnector1: TSQLConnector
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = 'OneFastClient'
+    KeepConnection = False
+    Password = 'flmepgxjj@654321'
+    Transaction = SQLTransaction1
+    UserName = 'sa'
+    HostName = '115.159.70.108'
+    ConnectorType = 'MSSQLServer'
+    Left = 83
+    Top = 183
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = True
+    Database = SQLConnector1
+    Left = 150
+    Top = 188
+  end
+end

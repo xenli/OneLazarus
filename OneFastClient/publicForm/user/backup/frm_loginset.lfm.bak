@@ -1,0 +1,241 @@
+inherited frmLoginSet: TfrmLoginSet
+  Height = 472
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = '服务器连接配置'
+  ClientHeight = 472
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  inherited plTool: TPanel
+    inherited tbNew: TBitBtn
+      OnClick = tbNewClick
+    end
+    inherited tbEdit: TBitBtn
+      Left = 226
+      Caption = '选择'
+      ImageIndex = 3
+      OnClick = tbEditClick
+    end
+    inherited tbSave: TBitBtn
+      Left = 76
+      OnClick = tbSaveClick
+    end
+    inherited tbRefresh: TBitBtn
+      Left = 151
+      OnClick = tbRefreshClick
+    end
+    inherited tbClose5: TBitBtn
+      Visible = False
+    end
+    inherited tbDel: TBitBtn
+      Left = 301
+      OnClick = tbDelClick
+    end
+  end
+  object DBGrid1: TDBGrid[1]
+    Left = 0
+    Height = 258
+    Top = 30
+    Width = 642
+    Align = alTop
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = '标签'
+        Width = 150
+        FieldName = 'FHostCaption'
+      end    
+      item
+        Title.Caption = '服务器地址'
+        Width = 150
+        FieldName = 'FHostName'
+      end    
+      item
+        Title.Caption = '账套'
+        Width = 150
+        FieldName = 'FHostZTCode'
+      end>
+    DataSource = dsMain
+    TabOrder = 1
+  end
+  object Label1: TLabel[2]
+    Left = 24
+    Height = 20
+    Top = 309
+    Width = 75
+    Caption = '服务器名称'
+    ParentColor = False
+  end
+  object dbFHostCaption: TDBEdit[3]
+    Left = 128
+    Height = 28
+    Top = 304
+    Width = 408
+    DataField = 'FHostCaption'
+    DataSource = dsMain
+    MaxLength = 0
+    TabOrder = 2
+  end
+  object Label2: TLabel[4]
+    Left = 24
+    Height = 20
+    Top = 341
+    Width = 75
+    Caption = '服务器地址'
+    ParentColor = False
+  end
+  object dbFHostName: TDBEdit[5]
+    Left = 128
+    Height = 28
+    Top = 336
+    Width = 408
+    DataField = 'FHostName'
+    DataSource = dsMain
+    MaxLength = 0
+    TabOrder = 3
+  end
+  object Label3: TLabel[6]
+    Left = 24
+    Height = 20
+    Top = 374
+    Width = 75
+    Caption = '服务器密钥'
+    ParentColor = False
+  end
+  object dbFHostKey: TDBEdit[7]
+    Left = 128
+    Height = 28
+    Top = 369
+    Width = 408
+    DataField = 'FHostKey'
+    DataSource = dsMain
+    MaxLength = 0
+    TabOrder = 4
+  end
+  object Label4: TLabel[8]
+    Left = 24
+    Height = 20
+    Top = 441
+    Width = 72
+    Caption = '账 套 代 码'
+    ParentColor = False
+  end
+  object dbFHostZTCode: TDBEdit[9]
+    Left = 128
+    Height = 28
+    Top = 437
+    Width = 408
+    DataField = 'FHostZTCode'
+    DataSource = dsMain
+    MaxLength = 0
+    TabOrder = 5
+  end
+  object Label5: TLabel[10]
+    Left = 24
+    Height = 20
+    Top = 407
+    Width = 72
+    Caption = '租 户 代 码'
+    ParentColor = False
+  end
+  object dbFHostZTCode1: TDBEdit[11]
+    Left = 128
+    Height = 28
+    Top = 402
+    Width = 408
+    DataField = 'FPlatUserCode'
+    DataSource = dsMain
+    MaxLength = 0
+    TabOrder = 6
+  end
+  object qryMain: TOneDataSet[12]
+    FieldDefs = <>
+    DataInfo.IsDesignGetFields = False
+    DataInfo.OpenMode = openData
+    DataInfo.SaveMode = saveData
+    DataInfo.DataReturnMode = dataStream
+    DataInfo.PageSize = -1
+    DataInfo.PageIndex = 0
+    DataInfo.PageCount = 0
+    DataInfo.PageTotal = 0
+    DataInfo.AffectedMaxCount = 0
+    DataInfo.AffectedMustCount = 1
+    DataInfo.RowsAffected = 0
+    DataInfo.AsynMode = False
+    DataInfo.IsReturnData = False
+    DataInfo.TranSpanSec = 0
+    Params = <>
+    MultiIndex = 0
+    Left = 176
+    Top = 240
+    object qryMainFHostCaption: TStringField
+      DisplayLabel = '标签'
+      FieldKind = fkData
+      FieldName = 'FHostCaption'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryMainFHostName: TStringField
+      DisplayLabel = '服务器地址'
+      FieldKind = fkData
+      FieldName = 'FHostName'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 150
+    end
+    object qryMainFHostPort: TLongintField
+      FieldKind = fkData
+      FieldName = 'FHostPort'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryMainFHostKey: TStringField
+      DisplayLabel = '服务器秘钥'
+      FieldKind = fkData
+      FieldName = 'FHostKey'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryMainFHostZTCode: TStringField
+      DisplayLabel = '账套'
+      FieldKind = fkData
+      FieldName = 'FHostZTCode'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryMainFPlatUserCode: TStringField
+      DisplayLabel = '租户代码'
+      FieldKind = fkData
+      FieldName = 'FPlatUserCode'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+  end
+  object dsMain: TDataSource[13]
+    DataSet = qryMain
+    Left = 232
+    Top = 240
+  end
+end

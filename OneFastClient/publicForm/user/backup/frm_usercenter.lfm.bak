@@ -1,0 +1,358 @@
+inherited frmUserCenter: TfrmUserCenter
+  Width = 853
+  Caption = '用户中心'
+  ClientWidth = 853
+  OnClose = FormClose
+  inherited plTool: TPanel
+    Width = 853
+    ClientWidth = 853
+    inherited tbClose: TBitBtn
+      Left = 777
+    end
+    inherited tbNew: TBitBtn
+      Visible = False
+    end
+    inherited tbEdit: TBitBtn
+      Visible = False
+    end
+    inherited tbSave: TBitBtn
+      Visible = False
+    end
+    inherited tbRefresh: TBitBtn
+      Visible = False
+    end
+    inherited tbClose5: TBitBtn
+      Left = 702
+      Visible = False
+    end
+    inherited tbDel: TBitBtn
+      Visible = False
+    end
+  end
+  object plUser: TPanel[1]
+    Left = 0
+    Height = 448
+    Top = 30
+    Width = 488
+    Align = alLeft
+    ClientHeight = 448
+    ClientWidth = 488
+    TabOrder = 1
+    object BitBtn1: TBitBtn
+      Left = 7
+      Height = 92
+      Top = 8
+      Width = 98
+      Caption = '用户信息'
+      Layout = blGlyphTop
+      Images = dmImg.img64
+      ImageIndex = 23
+      TabOrder = 0
+    end
+    object DBEdit1: TDBEdit
+      Left = 192
+      Height = 28
+      Top = 8
+      Width = 160
+      MaxLength = 0
+      TabOrder = 1
+    end
+    object Label1: TLabel
+      Left = 120
+      Height = 20
+      Top = 12
+      Width = 60
+      Caption = '登陆代码'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 120
+      Height = 20
+      Top = 44
+      Width = 60
+      Caption = '登陆代码'
+      ParentColor = False
+    end
+    object DBEdit2: TDBEdit
+      Left = 192
+      Height = 28
+      Top = 40
+      Width = 160
+      MaxLength = 0
+      TabOrder = 2
+    end
+    object Label3: TLabel
+      Left = 120
+      Height = 20
+      Top = 76
+      Width = 60
+      Caption = '登陆代码'
+      ParentColor = False
+    end
+    object DBEdit3: TDBEdit
+      Left = 192
+      Height = 28
+      Top = 72
+      Width = 160
+      MaxLength = 0
+      PasswordChar = '*'
+      TabOrder = 3
+    end
+    object DBCheckBox1: TDBCheckBox
+      Left = 376
+      Height = 23
+      Top = 13
+      Width = 90
+      Caption = '多点登陆'
+      TabOrder = 4
+      ValueChecked = 'True'
+      ValueUnchecked = 'False'
+    end
+    object DBCheckBox2: TDBCheckBox
+      Left = 376
+      Height = 23
+      Top = 45
+      Width = 90
+      Caption = '时间限制'
+      TabOrder = 5
+      ValueChecked = 'True'
+      ValueUnchecked = 'False'
+    end
+    object DBCheckBox3: TDBCheckBox
+      Left = 376
+      Height = 23
+      Top = 77
+      Width = 90
+      Caption = '用户启用'
+      TabOrder = 6
+      ValueChecked = 'True'
+      ValueUnchecked = 'False'
+    end
+    object Label4: TLabel
+      Left = 8
+      Height = 20
+      Top = 116
+      Width = 60
+      Caption = '用户类型'
+      ParentColor = False
+    end
+    object DBEdit4: TDBEdit
+      Left = 80
+      Height = 28
+      Top = 112
+      Width = 160
+      MaxLength = 0
+      TabOrder = 7
+    end
+    object Label5: TLabel
+      Left = 248
+      Height = 20
+      Top = 116
+      Width = 60
+      Caption = '用户电话'
+      ParentColor = False
+    end
+    object DBEdit5: TDBEdit
+      Left = 320
+      Height = 28
+      Top = 112
+      Width = 160
+      MaxLength = 0
+      TabOrder = 8
+    end
+    object Label6: TLabel
+      Left = 8
+      Height = 20
+      Top = 156
+      Width = 60
+      Caption = '开始时间'
+      ParentColor = False
+    end
+    object DBEdit6: TDBEdit
+      Left = 80
+      Height = 28
+      Top = 152
+      Width = 160
+      MaxLength = 0
+      TabOrder = 9
+    end
+    object Label7: TLabel
+      Left = 248
+      Height = 20
+      Top = 156
+      Width = 60
+      Caption = '结束时间'
+      ParentColor = False
+    end
+    object DBEdit7: TDBEdit
+      Left = 320
+      Height = 28
+      Top = 152
+      Width = 160
+      MaxLength = 0
+      TabOrder = 10
+    end
+    object Label8: TLabel
+      Left = 7
+      Height = 20
+      Top = 196
+      Width = 60
+      Caption = '用户组织'
+      ParentColor = False
+    end
+    object DBEdit8: TDBEdit
+      Left = 80
+      Height = 28
+      Top = 192
+      Width = 160
+      MaxLength = 0
+      TabOrder = 11
+    end
+    object Label9: TLabel
+      Left = 247
+      Height = 20
+      Top = 196
+      Width = 60
+      Caption = '用户角色'
+      ParentColor = False
+    end
+    object DBEdit9: TDBEdit
+      Left = 320
+      Height = 28
+      Top = 192
+      Width = 160
+      MaxLength = 0
+      TabOrder = 12
+    end
+    object Label10: TLabel
+      Left = 7
+      Height = 20
+      Top = 236
+      Width = 60
+      Caption = '用户备注'
+      ParentColor = False
+    end
+    object DBEdit10: TDBEdit
+      Left = 80
+      Height = 28
+      Top = 232
+      Width = 400
+      MaxLength = 0
+      TabOrder = 13
+    end
+  end
+  object tbShowPassChange: TBitBtn[2]
+    Left = 496
+    Height = 92
+    Top = 36
+    Width = 98
+    Caption = '密码更改'
+    Layout = blGlyphTop
+    Images = dmImg.img64
+    ImageIndex = 52
+    OnClick = tbShowPassChangeClick
+    TabOrder = 2
+  end
+  object BitBtn3: TBitBtn[3]
+    Left = 600
+    Height = 92
+    Top = 36
+    Width = 98
+    Caption = '缓存清除'
+    Layout = blGlyphTop
+    Images = dmImg.img64
+    ImageIndex = 18
+    TabOrder = 3
+  end
+  object groupBoxPassChange: TGroupBox[4]
+    Left = 496
+    Height = 136
+    Top = 152
+    Width = 326
+    Caption = '密码修改'
+    ClientHeight = 111
+    ClientWidth = 322
+    TabOrder = 4
+    Visible = False
+    object edOldPass: TEdit
+      Left = 80
+      Height = 28
+      Top = 1
+      Width = 232
+      EchoMode = emPassword
+      PasswordChar = '*'
+      TabOrder = 0
+    end
+    object Label11: TLabel
+      Left = 8
+      Height = 20
+      Top = 5
+      Width = 45
+      Caption = '旧密码'
+      ParentColor = False
+    end
+    object Label12: TLabel
+      Left = 8
+      Height = 20
+      Top = 44
+      Width = 45
+      Caption = '新密码'
+      ParentColor = False
+    end
+    object edOldPass1: TEdit
+      Left = 80
+      Height = 28
+      Top = 41
+      Width = 232
+      EchoMode = emPassword
+      PasswordChar = '*'
+      TabOrder = 1
+    end
+    object tbChangePass: TBitBtn
+      Left = 80
+      Height = 30
+      Top = 75
+      Width = 115
+      Caption = '更改'
+      Images = dmImg.img16
+      ImageIndex = 3
+      TabOrder = 2
+    end
+    object tbChangePass1: TBitBtn
+      Left = 197
+      Height = 30
+      Top = 75
+      Width = 115
+      Caption = '取消'
+      Images = dmImg.img16
+      ImageIndex = 10
+      TabOrder = 3
+    end
+  end
+  object qryAdmin: TOneDataSet[5]
+    FieldDefs = <>
+    DataInfo.IsDesignGetFields = False
+    DataInfo.OpenMode = openData
+    DataInfo.SaveMode = saveData
+    DataInfo.DataReturnMode = dataStream
+    DataInfo.PageSize = -1
+    DataInfo.PageIndex = 0
+    DataInfo.PageCount = 0
+    DataInfo.PageTotal = 0
+    DataInfo.AffectedMaxCount = 0
+    DataInfo.AffectedMustCount = 1
+    DataInfo.RowsAffected = 0
+    DataInfo.AsynMode = False
+    DataInfo.IsReturnData = False
+    DataInfo.TranSpanSec = 0
+    Params = <>
+    MultiIndex = 0
+    Left = 264
+    Top = 296
+  end
+  object dsAdmin: TDataSource[6]
+    DataSet = qryAdmin
+    Left = 334
+    Top = 296
+  end
+end

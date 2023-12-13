@@ -1,0 +1,278 @@
+inherited frmGroupManage: TfrmGroupManage
+  Width = 1071
+  Caption = '组织架构管理'
+  ClientWidth = 1071
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  inherited plTool: TPanel
+    Width = 1071
+    ClientWidth = 1071
+    inherited tbClose: TBitBtn
+      Left = 995
+    end
+    inherited tbNew: TBitBtn
+      Width = 103
+      Caption = '新建节点'
+      OnClick = tbNewClick
+    end
+    inherited tbEdit: TBitBtn
+      Left = 104
+      Width = 112
+      Caption = '新建子节点'
+      OnClick = tbEditClick
+    end
+    inherited tbSave: TBitBtn
+      Left = 216
+      OnClick = tbSaveClick
+    end
+    inherited tbRefresh: TBitBtn
+      Left = 291
+      OnClick = tbRefreshClick
+    end
+    inherited tbClose5: TBitBtn
+      Left = 975
+      Width = 20
+      Visible = False
+    end
+    inherited tbDel: TBitBtn
+      Left = 953
+      Width = 22
+      Align = alRight
+      Visible = False
+    end
+  end
+  inherited plDoubleBuffered: TPanel
+    Width = 1071
+    ClientWidth = 1071
+    object TreeGroup: TLazVirtualStringTree[0]
+      Left = 0
+      Height = 448
+      Top = 0
+      Width = 312
+      Align = alLeft
+      DefaultNodeHeight = 20
+      DefaultText = 'Node'
+      Header.AutoSizeIndex = 0
+      Header.Columns = <      
+        item
+          Options = [coAllowClick, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAllowFocus]
+          Position = 0
+          Text = '节点代码'
+          Width = 100
+        end      
+        item
+          Options = [coAllowClick, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible, coAllowFocus]
+          Position = 1
+          Text = '架构名称'
+          Width = 200
+        end>
+      Header.Options = [hoColumnResize, hoDrag, hoShowSortGlyphs, hoVisible]
+      TabOrder = 0
+      OnGetText = TreeGroupGetText
+      OnNodeClick = TreeGroupNodeClick
+    end
+    object Label1: TLabel[1]
+      Left = 344
+      Height = 20
+      Top = 23
+      Width = 60
+      Caption = '架构代码'
+      ParentColor = False
+    end
+    object dbFGroupCode: TDBEdit[2]
+      Left = 416
+      Height = 28
+      Top = 19
+      Width = 160
+      DataField = 'FGroupCode'
+      DataSource = dsGroup
+      MaxLength = 0
+      TabOrder = 1
+    end
+    object Label2: TLabel[3]
+      Left = 632
+      Height = 20
+      Top = 23
+      Width = 60
+      Caption = '架构名称'
+      ParentColor = False
+    end
+    object dbFGroupCaption: TDBEdit[4]
+      Left = 704
+      Height = 28
+      Top = 19
+      Width = 160
+      DataField = 'FGroupCaption'
+      DataSource = dsGroup
+      MaxLength = 0
+      TabOrder = 2
+    end
+    object Label3: TLabel[5]
+      Left = 344
+      Height = 20
+      Top = 63
+      Width = 60
+      Caption = '架构类型'
+      ParentColor = False
+    end
+    object Label4: TLabel[6]
+      Left = 632
+      Height = 20
+      Top = 63
+      Width = 60
+      Caption = '节点代码'
+      ParentColor = False
+    end
+    object dbFGroupTreeCode: TDBEdit[7]
+      Left = 704
+      Height = 28
+      Top = 59
+      Width = 160
+      DataField = 'FGroupTreeCode'
+      DataSource = dsGroup
+      ReadOnly = True
+      MaxLength = 0
+      TabOrder = 3
+    end
+    object Label5: TLabel[8]
+      Left = 344
+      Height = 20
+      Top = 111
+      Width = 60
+      Caption = '架构备注'
+      ParentColor = False
+    end
+    object dbFRemark: TDBEdit[9]
+      Left = 416
+      Height = 28
+      Top = 107
+      Width = 448
+      DataField = 'FRemark'
+      DataSource = dsGroup
+      MaxLength = 0
+      TabOrder = 4
+    end
+    object dbFGroupType: TDBComboBox[10]
+      Left = 416
+      Height = 28
+      Top = 59
+      Width = 160
+      DataField = 'FGroupType'
+      DataSource = dsGroup
+      ItemHeight = 20
+      Items.Strings = (
+        '集团'
+        '公司'
+        '部门'
+      )
+      MaxLength = 0
+      TabOrder = 5
+    end
+  end
+  object qryGroup: TOneDataSet[2]
+    FieldDefs = <>
+    OnNewRecord = qryGroupNewRecord
+    SQL.Strings = (
+      'Select'
+      '*'
+      'from onefast_group'
+      'order by FGroupTreeCode asc '
+    )
+    DataInfo.IsDesignGetFields = False
+    DataInfo.TableName = 'onefast_group'
+    DataInfo.PrimaryKey = 'FGroupID'
+    DataInfo.OpenMode = openData
+    DataInfo.SaveMode = saveData
+    DataInfo.DataReturnMode = dataStream
+    DataInfo.PageSize = -1
+    DataInfo.PageIndex = 0
+    DataInfo.PageCount = 0
+    DataInfo.PageTotal = 0
+    DataInfo.AffectedMaxCount = 0
+    DataInfo.AffectedMustCount = 1
+    DataInfo.RowsAffected = 0
+    DataInfo.AsynMode = False
+    DataInfo.IsReturnData = False
+    DataInfo.TranSpanSec = 0
+    Params = <>
+    MultiIndex = 0
+    Left = 376
+    Top = 248
+    object qryGroupFGroupID: TStringField
+      FieldKind = fkData
+      FieldName = 'FGroupID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object qryGroupFPGroupID: TStringField
+      FieldKind = fkData
+      FieldName = 'FPGroupID'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object qryGroupFGroupCode: TStringField
+      FieldKind = fkData
+      FieldName = 'FGroupCode'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryGroupFGroupCaption: TStringField
+      FieldKind = fkData
+      FieldName = 'FGroupCaption'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryGroupFGroupType: TStringField
+      FieldKind = fkData
+      FieldName = 'FGroupType'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryGroupFGroupTreeCode: TStringField
+      FieldKind = fkData
+      FieldName = 'FGroupTreeCode'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryGroupFRemark: TStringField
+      FieldKind = fkData
+      FieldName = 'FRemark'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+  end
+  object dsGroup: TDataSource[3]
+    DataSet = qryGroup
+    OnStateChange = dsGroupStateChange
+    Left = 440
+    Top = 248
+  end
+end

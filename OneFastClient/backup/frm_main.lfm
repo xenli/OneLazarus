@@ -1,0 +1,185 @@
+inherited frmMain: TfrmMain
+  Left = -8
+  Height = 558
+  Top = -8
+  Width = 1055
+  Caption = 'OneFastClient开发平台'
+  ClientHeight = 558
+  ClientWidth = 1055
+  FormStyle = fsMDIForm
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object plMainTop: TPanel[0]
+    Left = 0
+    Height = 56
+    Top = 0
+    Width = 1055
+    Align = alTop
+    ClientHeight = 56
+    ClientWidth = 1055
+    TabOrder = 0
+    object Image1: TImage
+      Left = 1
+      Height = 54
+      Top = 1
+      Width = 75
+      Align = alLeft
+      Center = True
+      Picture.Data = {
+        1754506F727461626C654E6574776F726B477261706869636C03000089504E47
+        0D0A1A0A0000000D4948445200000020000000200806000000737A7AF4000000
+        1974455874536F6674776172650041646F626520496D616765526561647971C9
+        653C00000026744558745469746C6500416E616C797369733B44617461416E61
+        6C797369733B4C696E655374796C653BF68E22C4000002DC49444154785EC557
+        DD4E1351109E69B760FD21C64413A38904A35EC80368E11D44090F63FC4B1409
+        0F6354BCF6429152B8C40B83E25F628CB1AD85D21409D01D77D6333B39A7E9D9
+        74957492B343CEF7CD9CC99EF9982D12110CD2723060CB2122E0E00C10C05AFD
+        1A4276A36885012799995FED648B776BA16E0A02F46AB327B7AF05818984F18B
+        27A1BD7BA02942494740B24BA4C71099E46838FCD447C22404D2A004FBFAADC5
+        440CF8B9DDDC81C5D5A6966C3C19CF4E8F618F31AA7402C2982766E540022D82
+        9DC49A6D346AC0EC779DBD07F0D00EF0E725F1C1E11F981E90F35C01FAAA8F5B
+        954DE3B14F1975382098995FD927F2B35553A68F115946438C4CCFADEC31E00B
+        25EC56EFD33BD7876219F2E1E7CE14B5A3556C200DEB6C4532DA663427A4B3A7
+        8F78FE53485EB52F1C6F6448AD48866BD5AD84088889778715D9928CC156B30D
+        D59F9B00644B50FF94CAED3CEC4482F968F5A308727B80577FF1DA0359A548FF
+        612650F00F87613A3FBD309905799192EF751920EF48CEEDEF50B89EBC243C06
+        0AD373953D6D2E9BA79229C56D7EEBF1F2AE40BD84F7EC6EA9C8FEE6ECF26FD2
+        A6EECAFFFCDEC470C01532A7347E0A42A2680110FB90C97F7DE56D35911C73AF
+        8E8DB08F7112BEC9BCB65E572E118C9D3F2E3CB6443BEF367E31256F64D88685
+        970D558D3BC71DC9BD2A377C1A670B855BF951B786ACF3F642B97F5F0FA4DFAB
+        1A79B86EAF30E7002DB06752F519B8BE89485D05A41F9A7E9062E9B8BCFE8259
+        8159221F30BEE0723CB81B9FF7C57355C353B3E5445A60CBE428FBA947E51D83
+        5B036BE1FEC431C66F3C5C6A1B00D443844F2A9EA03A0B5E3C982CC6953072E9
+        C289F8A3546CE3F3A654CF305C76F00F9F1A3A0D191FB5F1F71F1B56FC95D111
+        0B5F377822C372A50E640D2F52396DB5E1CDF79A252144B0A4B958AE392D8296
+        1C5F2FD50011F5835464E8DC3B3A729292E5CEFC382FC53B8A6B7E07DF170564
+        E8E26E9564C043DF7720F5D887FF890FFCE7F91F79669DE2DF6BEB4000000000
+        49454E44AE426082
+      }
+    end
+    object plHeadMenu: TPanel
+      Left = 76
+      Height = 54
+      Top = 1
+      Width = 978
+      Align = alClient
+      BevelOuter = bvNone
+      ClientHeight = 54
+      ClientWidth = 978
+      TabOrder = 0
+      object plHead: TPanel
+        Left = 0
+        Height = 54
+        Top = 0
+        Width = 978
+        Align = alClient
+        ClientHeight = 54
+        ClientWidth = 978
+        TabOrder = 0
+        object Label1: TLabel
+          Left = 1
+          Height = 52
+          Top = 1
+          Width = 168
+          Align = alLeft
+          Alignment = taCenter
+          AutoSize = False
+          Caption = 'One开发平台管理系统'
+          Layout = tlCenter
+          ParentColor = False
+        end
+        object tbClose1: TBitBtn
+          Left = 919
+          Height = 52
+          Top = 1
+          Width = 58
+          Align = alRight
+          AutoSize = True
+          Color = clWhite
+          Layout = blGlyphTop
+          Images = dmImg.img32
+          ImageIndex = 26
+          TabOrder = 0
+        end
+      end
+    end
+  end
+  object plMainLeft: TPanel[1]
+    AnchorSideTop.Control = plMainTop
+    Left = 0
+    Height = 502
+    Top = 56
+    Width = 76
+    Align = alLeft
+    ClientHeight = 502
+    ClientWidth = 76
+    TabOrder = 1
+    object tbClose: TBitBtn
+      Left = 1
+      Height = 55
+      Top = 446
+      Width = 74
+      Align = alBottom
+      Caption = '退出'
+      Color = clWhite
+      Layout = blGlyphTop
+      Images = dmImg.img16
+      ImageIndex = 4
+      OnClick = tbCloseClick
+      TabOrder = 0
+    end
+    object ScrollBox1: TScrollBox
+      Left = 1
+      Height = 335
+      Top = 1
+      Width = 74
+      HorzScrollBar.Increment = 1
+      HorzScrollBar.Page = 1
+      HorzScrollBar.Visible = False
+      VertScrollBar.Increment = 34
+      VertScrollBar.Page = 1
+      Align = alClient
+      BorderStyle = bsNone
+      TabOrder = 1
+    end
+    object tbUserCenter: TBitBtn
+      Left = 1
+      Height = 55
+      Top = 391
+      Width = 74
+      Align = alBottom
+      Caption = '用户信息'
+      Color = clWhite
+      Layout = blGlyphTop
+      Images = dmImg.img16
+      ImageIndex = 264
+      OnClick = tbUserCenterClick
+      TabOrder = 2
+    end
+    object tbAdmin: TBitBtn
+      Left = 1
+      Height = 55
+      Top = 336
+      Width = 74
+      Align = alBottom
+      Caption = '管理员'
+      Color = clWhite
+      Layout = blGlyphTop
+      Images = dmImg.img16
+      ImageIndex = 268
+      OnClick = tbAdminClick
+      TabOrder = 3
+    end
+  end
+  object tabMenu: TPageControl[2]
+    Left = 76
+    Height = 502
+    Top = 56
+    Width = 979
+    Align = alClient
+    TabOrder = 2
+    OnChange = tabMenuChange
+  end
+end

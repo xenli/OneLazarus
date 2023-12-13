@@ -1,0 +1,628 @@
+inherited frmAdminUserEdit: TfrmAdminUserEdit
+  Height = 394
+  Width = 831
+  Caption = '用户编辑'
+  ClientHeight = 394
+  ClientWidth = 831
+  DoubleBuffered = False
+  OnClose = FormClose
+  inherited plTool: TPanel
+    Width = 831
+    ClientWidth = 831
+    inherited tbClose: TBitBtn
+      Left = 755
+      OnClick = tbCloseClick
+    end
+    inherited tbNew: TBitBtn
+      OnClick = tbNewClick
+    end
+    inherited tbEdit: TBitBtn
+      Left = 735
+      Width = 20
+      Align = alRight
+      Visible = False
+    end
+    inherited tbSave: TBitBtn
+      Left = 76
+      OnClick = tbSaveClick
+    end
+    inherited tbRefresh: TBitBtn
+      Left = 151
+      OnClick = tbRefreshClick
+    end
+    inherited tbClose5: TBitBtn
+      Left = 715
+      Width = 20
+      Visible = False
+    end
+    inherited tbDel: TBitBtn
+      Left = 695
+      Width = 20
+      Align = alRight
+      Visible = False
+    end
+    object tbAdminPassChange: TBitBtn[7]
+      Left = 226
+      Height = 28
+      Top = 1
+      Width = 100
+      Align = alLeft
+      Caption = '密码更改'
+      Images = dmImg.img16
+      ImageIndex = 5
+      TabOrder = 7
+    end
+  end
+  object Label1: TLabel[1]
+    Left = 16
+    Height = 20
+    Top = 44
+    Width = 60
+    Caption = '登陆代码'
+    ParentColor = False
+  end
+  object dbFAdminCode: TDBEdit[2]
+    Left = 96
+    Height = 28
+    Top = 40
+    Width = 160
+    DataField = 'FAdminCode'
+    DataSource = dsAdmin
+    MaxLength = 0
+    TabOrder = 1
+  end
+  object Label2: TLabel[3]
+    Left = 280
+    Height = 20
+    Top = 44
+    Width = 60
+    Caption = '用户名称'
+    ParentColor = False
+  end
+  object dbFAdminName: TDBEdit[4]
+    Left = 360
+    Height = 28
+    Top = 40
+    Width = 160
+    DataField = 'FAdminName'
+    DataSource = dsAdmin
+    MaxLength = 0
+    TabOrder = 2
+  end
+  object Label3: TLabel[5]
+    Left = 544
+    Height = 20
+    Top = 44
+    Width = 60
+    Caption = '用户密码'
+    ParentColor = False
+  end
+  object dbFAdminPass: TDBEdit[6]
+    Left = 624
+    Height = 28
+    Top = 40
+    Width = 160
+    DataField = 'FAdminPass'
+    DataSource = dsAdmin
+    ReadOnly = True
+    Enabled = False
+    MaxLength = 0
+    PasswordChar = '*'
+    TabOrder = 3
+  end
+  object Label4: TLabel[7]
+    Left = 16
+    Height = 20
+    Top = 84
+    Width = 60
+    Caption = '用户类型'
+    ParentColor = False
+  end
+  object Label5: TLabel[8]
+    Left = 280
+    Height = 20
+    Top = 84
+    Width = 60
+    Caption = '用户电话'
+    ParentColor = False
+  end
+  object dbFAdminTel: TDBEdit[9]
+    Left = 360
+    Height = 28
+    Top = 80
+    Width = 160
+    DataField = 'FAdminTel'
+    DataSource = dsAdmin
+    MaxLength = 0
+    TabOrder = 4
+  end
+  object Label6: TLabel[10]
+    Left = 16
+    Height = 20
+    Top = 123
+    Width = 60
+    Caption = '有效时间'
+    ParentColor = False
+  end
+  object Label7: TLabel[11]
+    Left = 288
+    Height = 20
+    Top = 123
+    Width = 36
+    Caption = '------'
+    ParentColor = False
+  end
+  object dbFIsLimit: TDBCheckBox[12]
+    Left = 544
+    Height = 23
+    Top = 120
+    Width = 90
+    Caption = '时间限制'
+    DataField = 'FIsLimit'
+    DataSource = dsAdmin
+    TabOrder = 5
+    ValueChecked = 'True'
+    ValueUnchecked = 'False'
+  end
+  object Label8: TLabel[13]
+    Left = 16
+    Height = 20
+    Top = 164
+    Width = 60
+    Caption = '用户架构'
+    ParentColor = False
+  end
+  object dbFGroupCaption: TDBEdit[14]
+    Left = 96
+    Height = 28
+    Top = 160
+    Width = 133
+    DataField = 'FGroupCaption'
+    DataSource = dsAdmin
+    ReadOnly = True
+    MaxLength = 0
+    TabOrder = 6
+  end
+  object Label9: TLabel[15]
+    Left = 280
+    Height = 20
+    Top = 164
+    Width = 60
+    Caption = '用户角色'
+    ParentColor = False
+  end
+  object dbFRoleCaption: TDBEdit[16]
+    Left = 360
+    Height = 28
+    Top = 160
+    Width = 133
+    DataField = 'FRoleCaption'
+    DataSource = dsAdmin
+    ReadOnly = True
+    MaxLength = 0
+    TabOrder = 7
+  end
+  object dbFIsEnable: TDBCheckBox[17]
+    Left = 544
+    Height = 23
+    Top = 161
+    Width = 90
+    Caption = '启用用户'
+    DataField = 'FIsEnable'
+    DataSource = dsAdmin
+    TabOrder = 8
+    ValueChecked = 'True'
+    ValueUnchecked = 'False'
+  end
+  object dbFIsMultiLogin: TDBCheckBox[18]
+    Left = 544
+    Height = 23
+    Top = 81
+    Width = 90
+    Caption = '多点登陆'
+    DataField = 'FIsMultiLogin'
+    DataSource = dsAdmin
+    TabOrder = 9
+    ValueChecked = 'True'
+    ValueUnchecked = 'False'
+  end
+  object tbPickGroup: TBitBtn[19]
+    Left = 232
+    Height = 27
+    Top = 161
+    Width = 24
+    Images = dmImg.img16
+    ImageIndex = 3
+    OnClick = tbPickGroupClick
+    TabOrder = 10
+  end
+  object tbPickRole: TBitBtn[20]
+    Left = 493
+    Height = 27
+    Top = 161
+    Width = 27
+    Images = dmImg.img16
+    ImageIndex = 3
+    OnClick = tbPickRoleClick
+    TabOrder = 11
+  end
+  object Label10: TLabel[21]
+    Left = 16
+    Height = 20
+    Top = 204
+    Width = 60
+    Caption = '用户备注'
+    ParentColor = False
+  end
+  object dbFRemark: TDBEdit[22]
+    Left = 96
+    Height = 28
+    Top = 200
+    Width = 688
+    DataField = 'FRemark'
+    DataSource = dsAdmin
+    MaxLength = 0
+    TabOrder = 12
+  end
+  object plPass: TGroupBox[23]
+    Left = 232
+    Height = 136
+    Top = 240
+    Width = 320
+    Caption = '密码修改'
+    ClientHeight = 111
+    ClientWidth = 316
+    TabOrder = 13
+    Visible = False
+    object Label11: TLabel
+      Left = 24
+      Height = 20
+      Top = 8
+      Width = 45
+      Caption = '旧密码'
+      ParentColor = False
+    end
+    object edOldPass: TEdit
+      Left = 83
+      Height = 28
+      Top = 3
+      Width = 221
+      TabOrder = 0
+    end
+    object Label12: TLabel
+      Left = 24
+      Height = 20
+      Top = 45
+      Width = 45
+      Caption = '新密码'
+      ParentColor = False
+    end
+    object edNewPass: TEdit
+      Left = 83
+      Height = 28
+      Top = 40
+      Width = 221
+      TabOrder = 1
+    end
+    object tbPassCancle: TBitBtn
+      Left = 83
+      Height = 27
+      Top = 80
+      Width = 100
+      Caption = '取消'
+      Images = dmImg.img16
+      ImageIndex = 4
+      OnClick = tbPassCancleClick
+      TabOrder = 2
+    end
+    object tbPassChange: TBitBtn
+      Left = 204
+      Height = 27
+      Top = 80
+      Width = 100
+      Caption = '更改'
+      Images = dmImg.img16
+      ImageIndex = 3
+      OnClick = tbPassChangeClick
+      TabOrder = 3
+    end
+  end
+  object dbFAdminType: TDBComboBox[24]
+    Left = 96
+    Height = 28
+    Top = 80
+    Width = 160
+    DataField = 'FAdminType'
+    DataSource = dsAdmin
+    ItemHeight = 20
+    Items.Strings = (
+      '操作员'
+      '管理员'
+    )
+    MaxLength = 0
+    TabOrder = 14
+  end
+  object dbFLimtStartTime: TDBDateTimePicker[25]
+    Left = 96
+    Height = 28
+    Top = 120
+    Width = 189
+    DataField = 'FLimtStartTime'
+    DataSource = dsAdmin
+    ReadOnly = False
+    CenturyFrom = 1941
+    DateDisplayOrder = ddoYMD
+    MaxDate = 2958465
+    MinDate = -53780
+    TabOrder = 15
+    TrailingSeparator = False
+    TextForNullDate = ''
+    LeadingZeros = True
+    Kind = dtkDateTime
+    TimeFormat = tf24
+    TimeDisplay = tdHMS
+    DateMode = dmComboBox
+    UseDefaultSeparators = True
+    HideDateTimeParts = []
+    MonthNames = 'Long'
+  end
+  object dbFLimtEndTime: TDBDateTimePicker[26]
+    Left = 331
+    Height = 28
+    Top = 120
+    Width = 189
+    DataField = 'FLimtEndTime'
+    DataSource = dsAdmin
+    ReadOnly = False
+    CenturyFrom = 1941
+    DateDisplayOrder = ddoYMD
+    MaxDate = 2958465
+    MinDate = -53780
+    TabOrder = 16
+    TrailingSeparator = False
+    TextForNullDate = ''
+    LeadingZeros = True
+    Kind = dtkDateTime
+    TimeFormat = tf24
+    TimeDisplay = tdHMS
+    DateMode = dmComboBox
+    UseDefaultSeparators = True
+    HideDateTimeParts = []
+    MonthNames = 'Long'
+  end
+  object qryAdmin: TOneDataSet[27]
+    FieldDefs = <>
+    OnNewRecord = qryAdminNewRecord
+    SQL.Strings = (
+      'select'
+      '*'
+      'from v_onefast_admin_group'
+      'where FAdminID=:FAdminID'
+    )
+    DataInfo.IsDesignGetFields = False
+    DataInfo.TableName = 'onefast_admin'
+    DataInfo.PrimaryKey = 'FAdminID'
+    DataInfo.OpenMode = openData
+    DataInfo.SaveMode = saveData
+    DataInfo.DataReturnMode = dataStream
+    DataInfo.PageSize = -1
+    DataInfo.PageIndex = 0
+    DataInfo.PageCount = 0
+    DataInfo.PageTotal = 0
+    DataInfo.AffectedMaxCount = 0
+    DataInfo.AffectedMustCount = 1
+    DataInfo.RowsAffected = 0
+    DataInfo.AsynMode = False
+    DataInfo.IsReturnData = False
+    DataInfo.TranSpanSec = 0
+    Params = <    
+      item
+        DataType = ftString
+        Name = 'FAdminID'
+        ParamType = ptInput
+      end>
+    MultiIndex = 0
+    Left = 656
+    Top = 112
+    object qryAdminFAdminID: TStringField
+      DisplayLabel = '操作员ID'
+      FieldKind = fkData
+      FieldName = 'FAdminID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object qryAdminFAdminCode: TStringField
+      DisplayLabel = '操作员代码'
+      FieldKind = fkData
+      FieldName = 'FAdminCode'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryAdminFAdminName: TStringField
+      DisplayLabel = '操作员名称'
+      FieldKind = fkData
+      FieldName = 'FAdminName'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryAdminFAdminPass: TStringField
+      FieldKind = fkData
+      FieldName = 'FAdminPass'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryAdminFAdminTel: TStringField
+      DisplayLabel = '操作员电话'
+      FieldKind = fkData
+      FieldName = 'FAdminTel'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryAdminFAdminType: TStringField
+      DisplayLabel = '操作员类型'
+      FieldKind = fkData
+      FieldName = 'FAdminType'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 10
+    end
+    object qryAdminFIsEnable: TBooleanField
+      DisplayLabel = '启用'
+      FieldKind = fkData
+      FieldName = 'FIsEnable'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryAdminFIsLimit: TBooleanField
+      DisplayLabel = '时间限制'
+      FieldKind = fkData
+      FieldName = 'FIsLimit'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryAdminFLimtStartTime: TDateTimeField
+      DisplayLabel = '有效开始时间'
+      FieldKind = fkData
+      FieldName = 'FLimtStartTime'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryAdminFLimtEndTime: TDateTimeField
+      DisplayLabel = '有效结束时间'
+      FieldKind = fkData
+      FieldName = 'FLimtEndTime'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryAdminFRemark: TStringField
+      DisplayLabel = '备注'
+      FieldKind = fkData
+      FieldName = 'FRemark'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object qryAdminFCreateTime: TDateTimeField
+      DisplayLabel = '创建时间'
+      FieldKind = fkData
+      FieldName = 'FCreateTime'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryAdminFIsMultiLogin: TBooleanField
+      DisplayLabel = '多点登陆'
+      FieldKind = fkData
+      FieldName = 'FIsMultiLogin'
+      Index = 12
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object qryAdminFGroupID: TStringField
+      DisplayLabel = '架构ID'
+      FieldKind = fkData
+      FieldName = 'FGroupID'
+      Index = 13
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object qryAdminFGroupTreeCode: TStringField
+      DisplayLabel = '架构树形代码'
+      FieldKind = fkData
+      FieldName = 'FGroupTreeCode'
+      Index = 14
+      LookupCache = False
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryAdminFGroupCaption: TStringField
+      DisplayLabel = '架构名称'
+      FieldKind = fkData
+      FieldName = 'FGroupCaption'
+      Index = 15
+      LookupCache = False
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object qryAdminFRoleID: TStringField
+      DisplayLabel = '角色ID'
+      FieldKind = fkData
+      FieldName = 'FRoleID'
+      Index = 16
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object qryAdminFRoleCaption: TStringField
+      DisplayLabel = '角色名称'
+      FieldKind = fkData
+      FieldName = 'FRoleCaption'
+      Index = 17
+      LookupCache = False
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+  end
+  object dsAdmin: TDataSource[28]
+    DataSet = qryAdmin
+    OnStateChange = dsAdminStateChange
+    OnDataChange = dsAdminDataChange
+    Left = 716
+    Top = 112
+  end
+end

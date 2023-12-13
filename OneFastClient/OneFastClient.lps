@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="OneFastClient.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="29"/>
+        <CursorPos X="32" Y="43"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="frm_main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_Main"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="92"/>
+        <CursorPos X="53" Y="110"/>
+        <UsageCount Value="44"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="dataModule\dm_img.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dmImg"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseForm\frm_baseui.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmBaseUI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_BaseUI"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="12"/>
+        <CursorPos X="44" Y="27"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseForm\frm_basestand.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmBaseStand"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_BaseStand"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="24"/>
+        <CursorPos X="70" Y="22"/>
+        <UsageCount Value="44"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="appmanage.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="AppManage"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="259"/>
+        <CursorPos X="48" Y="274"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="public\func_public.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseForm\frm_basestandmdi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmStandMDI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="40"/>
+        <CursorPos X="43" Y="51"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="frm_login.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmLogin"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\frm_yesnomsg.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmYesNoMsg"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_YesNoMsg"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="impl_form.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="82"/>
+        <CursorPos X="46" Y="105"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\user\frm_usercenter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmUserCenter"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_UserCenter"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="58"/>
+        <CursorPos X="56" Y="82"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\user\frm_loginset.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmLoginSet"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_LoginSet"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="51"/>
+        <CursorPos X="32" Y="129"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="public\ClientInfo\client_userinfo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Client_UserInfo"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="public\ClientInfo\client_setinfo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="client_SetInfo"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="public\public_type.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="76" Y="12"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\admin\frm_admincenter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmAdminCenter"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_AdminCenter"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="33"/>
+        <CursorPos X="88" Y="55"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="dataModule\dm_clientserver.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dmClientServer"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="dm_ClientServer"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="73" Y="22"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\admin\frm_adminusermanage.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmAdminUserManage"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_AdminUserManage"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="91"/>
+        <CursorPos X="34" Y="103"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\admin\frm_groupmanage.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmGroupManage"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_GroupManage"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="176"/>
+        <CursorPos Y="186"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="controller\fastlogincontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="FastLoginController"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="56"/>
+        <CursorPos X="40" Y="75"/>
+        <UsageCount Value="44"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\admin\frm_rolemanage.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmRoleManage"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_RoleManage"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="189"/>
+        <CursorPos X="21" Y="199"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\admin\frm_adminuseredit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmAdminUserEdit"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_AdminUserEdit"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="240"/>
+        <CursorPos X="71" Y="262"/>
+        <UsageCount Value="44"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\frm_wait.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmWait"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_Wait"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="32"/>
+        <CursorPos Y="48"/>
+        <UsageCount Value="41"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\admin\frm_grouppick.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmGroupPick"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_GroupPick"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="56" Y="9"/>
+        <UsageCount Value="30"/>
+      </Unit>
+      <Unit>
+        <Filename Value="public\AdminInfo\admin_groupinfo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Admin_GroupInfo"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="16" Y="19"/>
+        <UsageCount Value="27"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\admin\frm_rolepick.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmRolePick"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_RolePick"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="15"/>
+        <CursorPos X="62" Y="32"/>
+        <UsageCount Value="25"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\OneClient\oneclientdataset.pas"/>
+        <UnitName Value="OneClientDataSet"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="538"/>
+        <CursorPos Y="563"/>
+        <UsageCount Value="16"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Lazarus\fpc\3.2.2\source\packages\fcl-db\src\sqldb\sqldb.pp"/>
+        <UnitName Value="SQLDB"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1119"/>
+        <CursorPos X="10" Y="1140"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\OneClient\baselib\onethread.pas"/>
+        <UnitName Value="OneThread"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\OneClient\baselib\oneasynthread.pas"/>
+        <UnitName Value="OneAsynThread"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7"/>
+        <CursorPos X="17" Y="15"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\OneCleintDemo\frm_demodataasync.pas"/>
+        <ComponentName Value="frmDemoDataAsync"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_demoDataAsync"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="90"/>
+        <CursorPos X="15" Y="63"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Lazarus\lcl\extctrls.pp"/>
+        <UnitName Value="ExtCtrls"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="14" Y="17"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Lazarus\lcl\controls.pp"/>
+        <UnitName Value="Controls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2335"/>
+        <CursorPos X="28" Y="2349"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Lazarus\lcl\include\wincontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="6390"/>
+        <CursorPos X="3" Y="6386"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Lazarus\components\aggpas\src\agg_font_cache_manager.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="151"/>
+        <CursorPos X="14" Y="166"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Lazarus\components\onlinepackagemanager\opkman_downloader.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="391"/>
+        <CursorPos X="54" Y="412"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Lazarus\fpc\3.2.2\source\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2174"/>
+        <CursorPos X="3" Y="2188"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Lazarus\components\onlinepackagemanager\opkman_updates.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="561"/>
+        <CursorPos X="61" Y="573"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Lazarus\components\onlinepackagemanager\opkman_visualtree.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="162"/>
+        <CursorPos X="15" Y="173"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Lazarus\lcl\forms.pp"/>
+        <UnitName Value="Forms"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1485"/>
+        <CursorPos X="29" Y="1505"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Lazarus\lcl\include\application.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2208"/>
+        <CursorPos X="45" Y="2226"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\OneClient\oneclientconnect.pas"/>
+        <UnitName Value="OneClientConnect"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1333"/>
+        <CursorPos Y="1349"/>
+        <UsageCount Value="13"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Lazarus\fpc\3.2.2\source\packages\fcl-db\src\base\bufdataset.pas"/>
+        <UnitName Value="BufDataset"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3425"/>
+        <CursorPos X="3" Y="3432"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\OneClient\baselib\oneclientdatainfo.pas"/>
+        <UnitName Value="OneClientDataInfo"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="120"/>
+        <CursorPos X="32" Y="144"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="public\AdminInfo\admin_group.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="73" Y="16"/>
+        <UsageCount Value="20"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="1">
+      <Position>
+        <Filename Value="public\AdminInfo\admin_groupinfo.pas"/>
+        <Caret Line="19" Column="16"/>
+      </Position>
+      <Position>
+        <Filename Value="controller\fastlogincontroller.pas"/>
+        <Caret Line="51" Column="45" TopLine="37"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

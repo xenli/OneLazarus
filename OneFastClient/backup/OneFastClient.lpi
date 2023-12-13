@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="OneFastClient"/>
+      <Scaled Value="True"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="DateTimeCtrls"/>
+      </Item>
+      <Item>
+        <PackageName Value="laz.virtualtreeview_package"/>
+      </Item>
+      <Item>
+        <PackageName Value="MemDSLaz"/>
+      </Item>
+      <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+      <Item>
+        <PackageName Value="OneClient"/>
+      </Item>
+      <Item>
+        <PackageName Value="LazControls"/>
+      </Item>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+    </RequiredPackages>
+    <Units>
+      <Unit>
+        <Filename Value="OneFastClient.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="frm_main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_Main"/>
+      </Unit>
+      <Unit>
+        <Filename Value="dataModule\dm_img.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dmImg"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseForm\frm_baseui.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmBaseUI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_BaseUI"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseForm\frm_basestand.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmBaseStand"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_BaseStand"/>
+      </Unit>
+      <Unit>
+        <Filename Value="appmanage.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="AppManage"/>
+      </Unit>
+      <Unit>
+        <Filename Value="public\func_public.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="baseForm\frm_basestandmdi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmStandMDI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="frm_login.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmLogin"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\frm_yesnomsg.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmYesNoMsg"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_YesNoMsg"/>
+      </Unit>
+      <Unit>
+        <Filename Value="impl_form.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\user\frm_usercenter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmUserCenter"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_UserCenter"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\user\frm_loginset.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmLoginSet"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_LoginSet"/>
+      </Unit>
+      <Unit>
+        <Filename Value="public\ClientInfo\client_userinfo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Client_UserInfo"/>
+      </Unit>
+      <Unit>
+        <Filename Value="public\ClientInfo\client_setinfo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="client_SetInfo"/>
+      </Unit>
+      <Unit>
+        <Filename Value="public\public_type.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\admin\frm_admincenter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmAdminCenter"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_AdminCenter"/>
+      </Unit>
+      <Unit>
+        <Filename Value="dataModule\dm_clientserver.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dmClientServer"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="dm_ClientServer"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\admin\frm_adminusermanage.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmAdminUserManage"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_AdminUserManage"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\admin\frm_groupmanage.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmGroupManage"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_GroupManage"/>
+      </Unit>
+      <Unit>
+        <Filename Value="controller\fastlogincontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="FastLoginController"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\admin\frm_rolemanage.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmRoleManage"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_RoleManage"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\admin\frm_adminuseredit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmAdminUserEdit"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_AdminUserEdit"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\frm_wait.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmWait"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_Wait"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\admin\frm_grouppick.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmGroupPick"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_GroupPick"/>
+      </Unit>
+      <Unit>
+        <Filename Value="public\AdminInfo\admin_groupinfo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Admin_GroupInfo"/>
+      </Unit>
+      <Unit>
+        <Filename Value="publicForm\admin\frm_rolepick.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmRolePick"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frm_RolePick"/>
+      </Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="OneFastClient"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="dataModule;baseForm;public;publicForm;publicForm\user;public\ClientInfo;publicForm\admin;controller;public\AdminInfo"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2Set"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions>
+      <Item>
+        <Name Value="EAbort"/>
+      </Item>
+      <Item>
+        <Name Value="ECodetoolError"/>
+      </Item>
+      <Item>
+        <Name Value="EFOpenError"/>
+      </Item>
+    </Exceptions>
+  </Debugging>
+</CONFIG>
